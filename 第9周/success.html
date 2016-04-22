@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>调查问卷</title>
+<meta name"author" content="李昊15301066 李毅斌15301076">
+<link rel="stylesheet" href="css/basic.css">
+<link rel="stylesheet" href="css/success.css">
+</head>
+<body>
+
+<header>
+<strong>成功登陆！</strong>
+</header>
+
+<main>
+<form action="submit.html" method="post">
+<fieldset>
+	<legend>个人信息填写</legend>
+    <p>
+      <label for="name">
+        <span>姓名：</span>
+        <input type="text" id="name" name="username" required/>
+        <strong><abbr title="required">*</abbr></strong>
+      </label>
+    </p>
+	
+    <p>
+      <label for="grade">
+        <span>年级：</span>
+        <select id="grade" name="usergrade">
+          <option value="Grade1">大一</option>
+          <option value="Grade2">大二</option>
+          <option value="Grade3">大三</option>
+          <option value="Grade4">大四</option>
+          <option value="Grade5">大五及以上</option>
+        </select>
+      </label>
+    </p>
+
+</fieldset>
+
+<fieldset>
+	<legend>调查问卷</legend>
+    </p>
+   <p>
+    1.每年旅游次数？
+    <ul>
+      <li>
+        <label for="title_1">
+          <input type="radio" id="title_1" name="title" value="num1" />
+          不出游
+        </label>
+      </li>
+      <li>
+        <label for="title_2">
+          <input type="radio" id="title_2" name="title" value="num2" />
+          1-5次
+        </label>
+      </li>
+      <li>
+        <label for="title_3">
+          <input type="radio" id="title_3" name="title" value="num3" />
+          6-10次
+        </label>
+      </li>
+      <li>
+        <label for="title_4">
+          <input type="radio" id="title_4" name="title" value="num4" />
+          11-15次
+        </label>
+      </li>
+      <li>
+        <label for="title_5">
+          <input type="radio" id="title_5" name="title" value="num5" />
+          16次以上
+        </label>
+      </li>
+    </ul>
+	</p>
+    
+    <p>
+    2.去过以下哪些城市？
+    <ul>
+      <li>
+        <label for="title_1">
+          <input type="checkbox" id="title_1" name="title" value="num1" />
+          北京
+        </label>
+      </li>
+      <li>
+        <label for="title_2">
+          <input type="checkbox" id="title_2" name="title" value="num2" />
+          上海
+        </label>
+      </li>
+      <li>
+        <label for="title_3">
+          <input type="checkbox" id="title_3" name="title" value="num3" />
+          广州
+        </label>
+      </li>
+      <li>
+        <label for="title_4">
+          <input type="checkbox" id="title_4" name="title" value="num4" />
+          西安
+        </label>
+      </li>
+      <li>
+        <label for="title_5">
+          <input type="checkbox" id="title_5" name="title" value="num5" />
+          其他
+        </label>
+      </li>
+    </ul>
+	</p>
+    
+</fieldset>
+
+<button type="submit">提交</button>
+
+</form>
+</main>
+
+<aside>
+<img src="images/city.jpg" sizes="25vw">
+<strong>Here and Back Travel</strong>
+</aside>
+
+<footer><p><strong><a href="https://www.baidu.com">Contact Us</a></strong></p></footer>
+</body>
+
+</html>

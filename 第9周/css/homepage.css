@@ -1,0 +1,19 @@
+/*基本布局*/
+header form {
+	width: 720px;
+	padding: 1em;
+}
+
+/*字体*/
+header label, .nav a {
+	color: white;
+}
+
+/*tab*/
+#tabContent1 {
+	background-color: white;
+	border-radius: 1em;
+	//border-bottom-left-radius: 1em;
+	margin-top: 0.5em;
+	padding: 0.5em;
+}

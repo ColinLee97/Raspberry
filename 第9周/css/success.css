@@ -1,0 +1,12 @@
+header, fieldset {
+	color:white;
+}
+
+fieldset {
+	margin-bottom: 2em;
+	border-radius: 1em;
+}
+
+form button {
+	margin-left:3em;
+}

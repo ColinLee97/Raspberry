@@ -1,0 +1,61 @@
+@charset "utf-8";
+/* CSS Document */
+#head1 {
+	height: 50px;
+	width: 900px;
+	background-color: #ADADAD;
+	text-align:left;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+
+#head2 {
+	margin: 10px 0px 0px 0px;
+	height : 100px;
+	width: 900px;
+	background-color: grey;
+}
+
+#head3 {
+	margin: 10px 0px 0px 0px;
+	height: 100px;
+	width: 900px;
+	background-color: grey;
+	
+}
+
+#left {
+	position: absolute;
+	margin: 10px 0px 0px 0px;
+	height: 500px;
+	width: 200px;
+	background-color: blue;
+}
+
+#middle {
+	position: absolute;
+	margin: 10px 0px 0px 250px;
+	height: 500px;
+	width: 350px;
+	background-color: red;
+}
+
+#right {
+	position: absolute;
+	margin: 10px 0px 0px 650px;
+	height: 300px;
+	width: 250px;
+	background-color: yellow;
+}
+
+#footer {
+	position: relative;
+	margin: 520px 0px 0px 0px;
+	height: 50px;
+	width: 900px;
+	background-color: grey;
+}
+
+div{
+	text-align: center;
+}

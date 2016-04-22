@@ -1,0 +1,77 @@
+/*基本布局*/
+body {
+	width: 720px;
+	margin-left: auto;
+	margin-right: auto;
+	border: 1px solid black;
+	padding: 0.5em;
+}
+
+header {
+	background-image: url(../images/cloud_header.jpg);
+	margin-bottom: 1%;
+	height: 100px;
+	line-height: 100px;
+	text-align: center;
+	font-size:2.5em;
+	color: white;
+}
+
+aside {
+	border: 1px solid black;
+	height: 450px;
+    float: left;
+	width: 28%;
+	text-align: center;
+	//font-size:1.2em;
+}
+
+main {
+	//background-color: #887E5F;
+	width: 65%;
+	float: right;
+	margin-bottom: 1%;
+	padding: 2%;
+}
+
+footer {
+	clear: both;
+	//background-color: red;
+	text-align: center;
+	padding: 0%;
+}
+
+/*左右排版*/
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+/*引用框*/
+blockquote {
+	border: thick dotted grey;
+}
+
+/*表格*/
+table {
+	border: thin solid black !important;
+	background-color: pink !important;
+    width: 100%;
+}
+
+table th, table td {
+	border: thin solid black !important;
+	background-color: white !important;
+	padding: 2% !important;
+	}
+
+table .center {
+	text-align: center;
+}
+
+table .strong {
+	font-weight: bold;
+}

@@ -1,0 +1,51 @@
+/*基本布局*/
+body {
+	width: 720px;
+	margin-left: auto;
+	margin-right: auto;
+	border: 1px solid black;
+	padding: 0.5em;
+}
+
+header {
+	background-image: url(../images/cloud_header.jpg);
+	margin-bottom: 1%;
+	text-align: center;
+	height: 4em;
+}
+
+aside {
+	//background-color: yellow;
+	height: 450px;
+    float: left;
+	width: 28%;
+	text-align: center;
+	font-size:1.2em;
+}
+
+main {
+	background-color: grey;
+	border-radius: 1em;
+	width: 65%;
+	float: right;
+	margin-bottom: 1%;
+	padding: 2%;
+}
+
+footer {
+	clear: both;
+	text-align: center;
+	padding: 0;
+}
+
+main img, aside img {
+	margin: 1%;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
