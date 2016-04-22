@@ -1,0 +1,25 @@
+stop();
+btn1_btn.addEventListener(MouseEvent.CLICK, showimage1);
+function showimage1(event:MouseEvent):void {
+	gotoAndPlay("label1");
+}
+btn2_btn.addEventListener(MouseEvent.CLICK, showimage2);
+function showimage2(event:MouseEvent):void {
+	gotoAndPlay("label2");
+}
+btn3_btn.addEventListener(MouseEvent.CLICK, showimage3);
+function showimage3(event:MouseEvent):void {
+	gotoAndPlay("label3");
+}
+btn4_btn.addEventListener(MouseEvent.CLICK, showimage4);
+function showimage4(event:MouseEvent):void {
+	gotoAndPlay("label4");
+}
+btn5_btn.addEventListener(MouseEvent.CLICK, showimage5);
+function showimage5(event:MouseEvent):void {
+	gotoAndPlay("label5");
+}
+btn6_btn.addEventListener(MouseEvent.CLICK, showimage6);
+function showimage6(event:MouseEvent):void {
+	gotoAndPlay("label6");
+}

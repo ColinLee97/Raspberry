@@ -1,0 +1,14 @@
+this.stop();
+
+function goto(num:int):Function
+{
+	return function (event:MouseEvent):void
+	{
+		gotoAndStop(num);
+	}
+}
+
+btn1.addEventListener(MouseEvent.CLICK, goto());
+btn2.addEventListener(MouseEvent.CLICK, goto());
+btn3.addEventListener(MouseEvent.CLICK, goto());
+btn4.addEventListener(MouseEvent.CLICK, goto());
