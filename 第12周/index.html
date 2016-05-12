@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>李昊15301066李毅斌15301076</title>
+
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/basic.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+    <h3>如果出现排版问题，请用火狐或Chrome浏览器打开</h2>
+    <p>使用Bootstrap和jQuery制作</p>
+    </header>
+    <main>
+     <fieldset>
+       <legend>点击弹框</legend>
+       <div class="col-xs-4">
+         <img class="img-responsive" src="img/thumbnails.svg" alt="点击弹框" id="popup">
+       </div>
+       <div class="col-xs-4 codearea">
+         <pre><code>$( "#popup" ).click(function( event ) {
+         alert("触发成功！");
+});</code></pre>
+       </div>
+     </fieldset>
+     <fieldset>
+       <legend>点击消失</legend>
+       <div class="col-xs-4">
+         <img class="img-responsive" src="img/thumbnails.svg" alt="点击消失" id="disappear">
+       </div>
+       <div class="col-xs-4 codearea">
+         <pre><code>$( "#disappear" ).click(function( event ) {
+	$( this ).hide( "slow" );
+});</code></pre>
+       </div>
+     </fieldset>
+     <fieldset>
+       <legend>点击变淡</legend>
+       <div class="col-xs-4">
+         <img class="img-responsive" src="img/thumbnails.svg" alt="点击变淡" id="fadeout">
+       </div>
+       <div class="col-xs-4 codearea">
+         <pre><code>$( "#fadeout" ).click(function( event ) {
+	$( this ).animate({opacity: 0.5});
+});</code></pre>
+       </div>
+     </fieldset>
+     <fieldset>
+       <legend>点我重置</legend>
+       <div class="col-xs-4">
+         <button class="btn btn-lg btn-default" type="button" id="reset">重置</button>
+       </div>
+       <div class="col-xs-4 codearea">
+         <pre><code>$( "#reset" ).click(function( event ) {
+	$( "#disappear" ).show( "slow" );
+	$( "#fadeout" ).animate({opacity: 1});
+});</code></pre>
+       </div>
+     </fieldset>
+    </main>
+  </div>
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/basic.js"></script>
+</body>
+</html>

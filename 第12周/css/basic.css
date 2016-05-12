@@ -1,0 +1,55 @@
+@charset "utf-8";
+/* CSS Document */
+
+@media (min-width: 768px) {
+	.container {
+		width: 750px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+/* 排版 */
+body > .container {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 10px 0;
+}
+
+header {
+	text-align: center;
+}
+
+main {
+	padding: 20px;
+}
+
+legend {
+	margin-bottom: 0px;
+}
+
+fieldset {
+	margin-bottom: 40px;
+}
+
+img {
+	margin-top: 20px;
+}
+
+.btn {
+	margin-top: 20px;
+}
+
+.codearea {
+	margin-top: 20px;
+	width: 55%;
+}
+
+/* 颜色 */
+body {
+	background-color: #ABABAB;
+}
+
+body > .container {
+	background-color: #fff;
+}
