@@ -1,0 +1,22 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* 排版 */
+main > .container {
+	margin-top: 20px;
+	padding: 10px 0;
+}
+
+main h1 {
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+/* 颜色 */
+body {
+	background-color: #ABABAB;
+}
+
+main > .container {
+	background-color: #fff;
+}

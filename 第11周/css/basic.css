@@ -1,0 +1,33 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* 排版 */
+body > .container {
+	margin-top: 20px;
+	padding: 10px 0;
+}
+
+header {
+	text-align: center;
+}
+
+main {
+	padding: 20px;
+}
+
+legend {
+	margin-bottom: 0px;
+}
+
+fieldset {
+	margin-bottom: 40px;
+}
+
+/* 颜色 */
+body {
+	background-color: #ABABAB;
+}
+
+body > .container {
+	background-color: #fff;
+}
