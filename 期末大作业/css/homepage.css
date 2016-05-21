@@ -1,0 +1,52 @@
+/* 排版 */
+body {
+	padding-top: 70px;
+	text-align:center
+}
+
+div + div {
+	margin-bottom: 20px;
+}
+
+nav {
+	position: fixed;
+	height: 50px;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 20;
+}
+
+header {
+	height: 500px;
+}
+
+main {
+	height: 1500px;
+}
+
+aside {
+	height: 500px;
+}
+
+footer {
+	height: 200px;
+}
+
+#div6 {
+	margin-bottom: 0px;
+}
+
+
+/* 颜色 */
+div {
+	background-color:#14C8D7;
+}
+
+nav {
+	background-color: #15E340;
+}
+
+aside {
+	background-color:#DC480E;
+}
