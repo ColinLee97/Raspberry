@@ -12,21 +12,22 @@ body {
 	text-align:center
 }
 
-div.row {
-	margin-bottom: 200px;
-	height: 1000px;
+#forHeader {
+	margin-bottom: 100px;
 }
 
-div.row + .row {
+header {
 	height: 600px;
-}
-
-div.row:last-child {
-	margin-bottom: 150px;
 }
 
 #forMain {
 	margin-bottom: 20px;
+}
+
+
+div.row {
+	margin-bottom: 100px;
+	height: 500px;
 }
 
 footer {
@@ -39,6 +40,6 @@ footer {
 
 
 /* 颜色 */
-div.row, footer {
+div.row, footer, Header {
 	background-color:#14C8D7;
 }

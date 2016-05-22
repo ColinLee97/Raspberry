@@ -1,0 +1,49 @@
+/* 导航栏 */
+body {
+	padding-top: 50px;
+}
+
+nav {
+	//background-color: rgba(21,227,64,.5);
+}
+
+/* 排版 */
+body {
+	text-align:center
+}
+
+#forMain, #forHeader {
+	margin-bottom: 20px;
+}
+
+div.row {
+	margin-bottom: 20px;
+	height: 300px;
+}
+
+aside {
+	height: 500px;
+}
+
+header {
+	height: 500px;
+}
+
+#forFooter {
+	margin-bottom: 0px;
+}
+
+footer {
+	height: 100px;
+}
+
+
+
+/* 颜色 */
+div.row, footer, #forHeader {
+	background-color:#14C8D7;
+}
+
+aside {
+	background-color: #8E85F6;
+}

@@ -1,6 +1,6 @@
 /* 导航栏 */
 body {
-	padding-top: 50px;
+	padding-top: 70px;
 }
 
 nav {
@@ -12,21 +12,17 @@ body {
 	text-align:center
 }
 
-div.row {
-	margin-bottom: 200px;
-	height: 1000px;
-}
-
-div.row + .row {
-	height: 600px;
-}
-
-div.row:last-child {
-	margin-bottom: 150px;
-}
-
 #forMain {
 	margin-bottom: 20px;
+}
+
+div.row {
+	margin-bottom: 20px;
+	height: 1500px;
+}
+
+aside {
+	height: 500px;
 }
 
 footer {
@@ -41,4 +37,8 @@ footer {
 /* 颜色 */
 div.row, footer {
 	background-color:#14C8D7;
+}
+
+aside {
+	background-color: #8E85F6;
 }

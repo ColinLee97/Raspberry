@@ -1,6 +1,6 @@
 /* 导航栏 */
 body {
-	padding-top: 50px;
+	padding-top: 70px;
 }
 
 nav {
@@ -13,16 +13,13 @@ body {
 }
 
 div.row {
-	margin-bottom: 200px;
-	height: 1000px;
+	margin-bottom: 50px;
+	height: 200px;
 }
 
 div.row + .row {
+	margin-bottom: 100px;
 	height: 600px;
-}
-
-div.row:last-child {
-	margin-bottom: 150px;
 }
 
 #forMain {
@@ -41,4 +38,9 @@ footer {
 /* 颜色 */
 div.row, footer {
 	background-color:#14C8D7;
+}
+
+nav {
+	//background-color: #15E340;
+	background-color: rgba(21,227,64,.5);
 }

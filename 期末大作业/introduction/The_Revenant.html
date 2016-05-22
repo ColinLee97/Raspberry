@@ -4,22 +4,62 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>树莓期末大作业</title>
-<link href="css/bootstrap.min.css" rel="stylesheet">
-<link href="css/homepage.css" rel="stylesheet">
+<title>《荒野猎人》</title>
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+<link href="css/introduction.css" rel="stylesheet">
 </head>
 
 <body>
-<div id="div1" class="container-fluid"><nav>1.导航栏（置顶）</nav></div>
-<div id="div2" class="container-fluid"><header>2.封面</header></div>
-<div id="div345" class="container">
-  <main class="col-sm-9"><h1>3.介绍</h1><p>4.获奖名单</p></main>
-  <aside class="col-sm-3">5.affix</aside>
+<div id="forNav" class="container-fluid">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar" aria-expanded="false">
+          <span class="sr-only">打开导航栏</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../index.html">奥斯卡</a>
+      </div><!-- .navbar-header -->
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="../index.html">首页</a></li>
+          <li><a href="../Prize_Winner.html">获奖名单</a></li>
+          <li class="dropdown active">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">影片介绍 <span class="caret"></span><span class="sr-only">(当前)</span></a>
+            <ul class="dropdown-menu">
+              <li class="active"><a href="The_Revenant.html">《荒野猎人》<span class="sr-only">(当前)</span></a></li>
+              <li><a href="Spotlight.html">《聚焦》</a></li>
+              <li><a href="The_Danish_Girl.html">《丹麦女孩》</a></li>
+              <li><a href="Room.html">《房间》</a></li>
+            </ul><!-- .dropdown-menu -->
+          </li><!-- .dropdown -->
+          <li><a href="../Media.html">多媒体展厅</a></li>
+        </ul><!-- .navbar-nav -->
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="../About.html">关于作业</a></li>
+        </ul><!-- .navbar-right -->
+      </div><!-- #myNavbar -->
+    </div><!-- .container -->
+  </nav>
 </div>
-<div id="div6"><footer>各种a</footer></div>
+<div id="forHeader" class="container-fluid">
+  <div class="row">
+    <header>2.电影封面+介绍文字、评分</header>
+  </div><!-- .row -->
+</div><!-- .container-fluid -->
+<div id="forMain" class="container">
+  <main>
+    <div class="row">3.电影详细介绍</div>
+    <div class="row">4.预告片</div>
+    <div class="row">5.剧照</div>
+  </main>
+</div>
+<div id="forFooter"><footer>各种a</footer></div>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
-<script src="js/jquery.min.js"></script> 
+<script src="../js/jquery.min.js"></script> 
 <!-- Include all compiled plugins (below), or include individual files as needed --> 
-<script src="js/bootstrap.min.js"></script> 
+<script src="../js/bootstrap.min.js"></script> 
 </body>
 </html>
