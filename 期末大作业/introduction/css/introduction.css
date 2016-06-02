@@ -1,45 +1,35 @@
-/* 导航栏 */
-body {
-	padding-top: 50px;
-}
-
-nav {
-	//background-color: rgba(21,227,64,.5);
-}
-
-/* 排版 */
-body {
-	text-align:center
-}
-
+/* 封面 */
 #forHeader {
 	margin-bottom: 100px;
 }
 
 header {
 	height: 600px;
+	background-color:#14C8D7;
+}
+
+/* 正文 */
+body {
+	padding-top: 50px;
 }
 
 #forMain {
 	margin-bottom: 20px;
 }
 
-
 div.row {
 	margin-bottom: 100px;
-	height: 500px;
-}
-
-footer {
-	height: 100px;
-}
-
-#forFooter {
-	margin-bottom: 0px;
-}
-
-
-/* 颜色 */
-div.row, footer, Header {
+	min-height: 200px;
 	background-color:#14C8D7;
 }
+
+/* 演员介绍 */
+#actor-intro .col-sm-4 {
+	padding: 20px;
+	background-color: #E8EC63;
+	border-left-width: 2px;
+	border-left-color: #FFFFFF;
+	border-left-style: solid;
+	height: 100%;
+}
+

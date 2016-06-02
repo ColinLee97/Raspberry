@@ -1,20 +1,17 @@
-/* 导航栏 */
+/* 标题 */
 body {
 	padding-top: 50px;
 }
 
-nav {
-	//background-color: rgba(21,227,64,.5);
-}
-
-/* 排版 */
-body {
-	text-align:center
+/* 正文 */
+#forMain {
+	margin-bottom: 20px;
 }
 
 div.row {
 	margin-bottom: 200px;
 	height: 1000px;
+	background-color:#14C8D7;
 }
 
 div.row + .row {
@@ -23,22 +20,4 @@ div.row + .row {
 
 div.row:last-child {
 	margin-bottom: 150px;
-}
-
-#forMain {
-	margin-bottom: 20px;
-}
-
-footer {
-	height: 100px;
-}
-
-#forFooter {
-	margin-bottom: 0px;
-}
-
-
-/* 颜色 */
-div.row, footer {
-	background-color:#14C8D7;
 }

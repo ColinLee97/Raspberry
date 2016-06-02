@@ -1,15 +1,6 @@
-/* 导航栏 */
+/* 正文 */
 body {
 	padding-top: 70px;
-}
-
-nav {
-	//background-color: rgba(21,227,64,.5);
-}
-
-/* 排版 */
-body {
-	text-align:center
 }
 
 #forMain {
@@ -19,26 +10,11 @@ body {
 div.row {
 	margin-bottom: 20px;
 	height: 1500px;
-}
-
-aside {
-	height: 500px;
-}
-
-footer {
-	height: 100px;
-}
-
-#forFooter {
-	margin-bottom: 0px;
-}
-
-
-/* 颜色 */
-div.row, footer {
 	background-color:#14C8D7;
 }
 
+/* affix */
 aside {
+	height: 500px;
 	background-color: #8E85F6;
 }

@@ -1,49 +1,72 @@
-/* 导航栏 */
+/* 封面标题 */
 body {
 	padding-top: 50px;
 }
 
-nav {
-	//background-color: rgba(21,227,64,.5);
-}
-
-/* 排版 */
-body {
-	text-align:center
-}
-
-#forMain, #forHeader {
+#forHeader {
 	margin-bottom: 20px;
-}
-
-div.row {
-	margin-bottom: 20px;
-	height: 300px;
-}
-
-aside {
-	height: 500px;
+	background-color:#14C8D7;
 }
 
 header {
 	height: 500px;
 }
 
-#forFooter {
-	margin-bottom: 0px;
+/* 主体 */
+#forMain {
+	margin-bottom: 20px;
 }
 
-footer {
-	height: 100px;
+div.row {
+	margin-bottom: 20px;
 }
 
-
-
-/* 颜色 */
-div.row, footer, #forHeader {
-	background-color:#14C8D7;
+/* affix */
+:target:before {
+	content:"";
+	display:block;
+	height:90px; /* fixed header height*/
+	margin:-90px 0 0; /* negative fixed header height */
 }
 
 aside {
-	background-color: #8E85F6;
+	text-align: left;
+}
+
+aside ul li {
+	padding-left: 0px;
+}
+
+aside ul li.active {
+	border-left: 2px solid #FF0000;
+}
+
+aside a {
+	margin-bottom: 10px !important;
+	padding-top: 0 !important;
+	padding-bottom: 0 !important;
+	//padding-bottom: 5px !important;
+}
+
+aside li.active a {
+	color: #ff0000;
+	padding-left: 13px !important;
+}
+
+aside ul.return-to-top {
+	padding-left: 15px;
+	margin-top: 10px;
+}
+
+.affix {
+	top: 90px;
+}
+
+.affix-top {
+	margin-top: 20px;
+	width: 100%;
+}
+
+.affix-bottom {
+	position: absolute;
 }

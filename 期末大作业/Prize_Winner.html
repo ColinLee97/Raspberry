@@ -6,10 +6,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>获奖名单</title>
 <link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/general.css" rel="stylesheet">
 <link href="css/Prize_Winner.css" rel="stylesheet">
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#myAffix" data-offset="100">
 <div id="forNav" class="container-fluid">
   <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
@@ -48,17 +49,296 @@
 <div id="forMain" class="container">
   <div class="col-sm-9">
     <main>
-      <div class="row">奖1</div>
-      <div class="row">奖2</div>
-      <div class="row">and so</div>
-      <div class="row">奖24</div>
+      <div class="row">
+        <h3 id="best-picture">最佳影片BEST PICTURE：</h3>
+        <ul>
+          <li><strong>《聚焦》Spotlight</strong></li>
+          <li>《荒野猎人》The Revenant</li>
+          <li>《火星救援》The Martian</li>
+          <li>《大空头》The Big Short</li>
+          <li>《疯狂的麦克斯：狂暴之路》Mad Max: Fury Road</li>
+          <li>《间谍之桥》Bridge of Spies</li>
+          <li>《布鲁克林》Brooklyn</li>
+          <li>《房间》Room</li>
+        </ul>
+      </div>
+      <div class="row">
+        <h3 id="directing">最佳导演DIRECTING：</h3>
+        <ul>
+          <li>亚当·麦凯《大空头》</li>
+          <li><strong>亚利桑德罗·G·伊纳里多《荒野猎人》</strong></li>
+          <li>托马斯·麦卡锡《聚焦》</li>
+          <li>乔治·米勒《疯狂的麦克斯：狂暴之路》</li>
+          <li>伦尼·阿伯拉罕森《房间》</li>
+        </ul>
+      </div>
+      <div class="row">
+        <h3 id="actor-in-a-leading-role">最佳男主角ACTOR IN A LEADING ROLE：</h3>
+        <ul>
+          <li>布莱恩·科兰斯顿《特朗勃》</li>
+          <li><strong>莱昂纳多·迪卡普里奥《荒野猎人》</strong></li>
+          <li>迈克尔·法斯宾德《乔布斯》</li>
+          <li>马特·达蒙《火星救援》</li>
+          <li>埃迪·雷德梅恩《丹麦女孩》</li>
+        </ul>
+      </div>
+      <div class="row">
+        <h3 id="actress-in-a-leading-role">最佳女主角ACTRESS IN A LEADING ROLE：</h3>
+        <ul>
+          <li>凯特·布兰切特《卡罗尔》</li>
+          <li><strong>布丽·拉尔森《房间》</strong></li>
+          <li>詹妮弗·劳伦斯《奋斗的乔伊》</li>
+          <li>西尔莎·罗南《布鲁克林》</li>
+          <li>夏洛特·兰普林《45周年》</li>
+        </ul>
+      </div>
+      <div class="row">
+        <h3 id="actor-in-a-supporting-role">最佳男配角ACTOR IN A SUPPORTING ROLE：</h3>
+        <ul>
+          <li><strong>马克·里朗斯《间谍之桥》</strong></li>
+          <li>马克·鲁法洛《聚焦》</li>
+          <li>克里斯蒂安·贝尔《大空头》</li>
+          <li>汤姆·哈迪《荒野猎人》</li>
+          <li>西尔维斯特·史泰龙《奎迪》</li>
+        </ul>
+      </div>
+      <div class="row">
+        <h3 id="actress-in-a-supporting-role">最佳女配角ACTRESS IN A SUPPORTING ROLE：</h3>
+        <ul>
+          <li>鲁妮·玛拉《卡罗尔》</li>
+          <li>凯特·温丝莱特《乔布斯》</li>
+          <li>詹妮弗·杰森·李《八恶人》</li>
+          <li>瑞秋·麦克唐纳斯《聚焦》</li>
+          <li><strong>艾丽西亚·维坎德《丹麦女孩》</strong></li>
+        </ul>
+      </div>
+      <div class="row">
+        <h3 id="writing-original-screenplay">最佳原创剧本WRITING (Original Screenplay)：</h3>
+        <ul>
+          <li><strong>托马斯·麦卡锡、乔希·辛格《聚焦》</strong></li>
+          <li>《头脑特工队》</li>
+          <li>《间谍之桥》</li>
+          <li>《冲出康普顿》</li>
+          <li>《机械姬》</li>
+        </ul>
+      </div>
+      <div class="row">
+        <h3 id="writing-adapted-screenplay">最佳改编剧本WRITING (Adapted Screenplay)：</h3>
+        <ul>
+          <li>德鲁·戈达德《火星救援》</li>
+          <li><strong>亚当·迈凯、查尔斯·兰道夫《大空头》</strong></li>
+          <li>菲利斯·奈吉《卡罗尔》</li>
+          <li>艾玛·唐纳修《房间》</li>
+          <li>尼克·宏比《布鲁克林》</li>
+        </ul>
+      </div>
+      <div class="row">
+        <h3 id="foreign-language-film">最佳外语片FOREIGN LANGUAGE FILM：</h3>
+        <ul>
+          <li><strong>《索尔之子》(Son of Saul，匈牙利)</strong></li>
+          <li>《野马》(Mustang，法国)</li>
+          <li>《蛇之拥抱》(Embrace of the Serpent，哥伦比亚)</li>
+          <li>《战争》(A War，丹麦)</li>
+          <li>《希布》(Theeb，约旦)</li>
+        </ul>
+      </div>
+      <div class="row">
+        <h3 id="documentary-feature">最佳纪录片DOCUMENTARY (Feature)：</h3>
+        <ul>
+          <li><strong>《艾米》</strong></li>
+          <li>《沉默之像》</li>
+          <li>《贩毒之地》</li>
+          <li>《发生什么了，西蒙妮小姐？》</li>
+          <li>《凛冬烈火》</li>
+        </ul>
+      </div>
+      <div class="row">
+        <h3 id="animated-feature-film">最佳动画长片ANIMATED FEATURE FILM：</h3>
+        <ul>
+          <li>《无常》Anomalisa</li>
+          <li>《男孩和世界》O Menino e o Mundo</li>
+          <li><strong>《头脑特工队》Inside Out</strong></li>
+          <li>《记忆中的玛妮》</li>
+          <li>《小羊肖恩》Shaun The Sheep</li>
+        </ul>
+      </div>
+      <div class="row">
+        <h3 id="cinematography">最佳摄影CINEMATOGRAPHY：</h3>
+        <ul>
+          <li><strong>艾曼努尔·卢贝兹基《荒野猎人》Emmanuel Lubezki</strong></li>
+          <li>《卡罗尔》Ed Lachman</li>
+          <li>《疯狂的麦克斯：狂暴之路》John Seale</li>
+          <li>《边境杀手》Roger Deakins</li>
+          <li>《八恶人》Robert Richardson</li>
+        </ul>
+      </div>
+      <div class="row">
+        <h3 id="film-editing">最佳剪辑FILM EDITING：</h3>
+        <ul>
+          <li><strong>玛格丽特·希科瑟尔《疯狂的麦克斯：狂暴之路》</strong></li>
+          <li>《荒野猎人》</li>
+          <li>《聚焦》</li>
+          <li>《大空头》</li>
+          <li>《星球大战：原力觉醒》</li>
+        </ul>
+      </div>
+      <div class="row">
+        <h3 id="costume-design">最佳服装设计COSTUME DESIGN：</h3>
+        <ul>
+          <li>《灰姑娘》</li>
+          <li>《卡罗尔》</li>
+          <li>《丹麦女孩》</li>
+          <li>《荒野猎人》</li>
+          <li><strong>《疯狂的麦克斯：狂暴之路》</strong></li>
+        </ul>
+      </div>
+      <div class="row">
+        <h3 id="production-design">最佳艺术指导PRODUCTION DESIGN：</h3>
+        <ul>
+          <li><strong>《疯狂的麦克斯：狂暴之路》</strong></li>
+          <li>《间谍之桥》</li>
+          <li>《火星救援》</li>
+          <li>《丹麦女孩》</li>
+          <li>《荒野猎人》</li>
+        </ul>
+      </div>
+      <div class="row">
+        <h3 id="music-original-score">最佳作曲MUSIC (Original Score)：</h3>
+        <ul>
+          <li><strong>《八恶人》</strong></li>
+          <li>《星球大战：原力觉醒》</li>
+          <li>《边境杀手》</li>
+          <li>《卡罗尔》</li>
+          <li>《间谍之桥》</li>
+        </ul>
+      </div>
+      <div class="row">
+        <h3 id="music-original-song">最佳原创歌曲MUSIC (Original Song)：</h3>
+        <ul>
+          <li>“Earned It”《五十度灰》</li>
+          <li>“Manta Ray”《Racing Extinction（灭绝狂奔）》</li>
+          <li>“Simple Song #3”《年轻气盛》</li>
+          <li>“Til It Happens To You”《猎场》</li>
+          <li><strong>“Writing’s On The Wall”《007：幽灵党》</strong></li>
+        </ul>
+      </div>
+      <div class="row">
+        <h3 id="visual-effects">最佳视觉效果VISUAL EFFECTS：</h3>
+        <ul>
+          <li>《疯狂的麦克斯：狂暴之路》</li>
+          <li>《星球大战：原力觉醒》</li>
+          <li>《荒野猎人》</li>
+          <li>《火星救援》</li>
+          <li><strong>《机械姬》</strong></li>
+        </ul>
+      </div>
+      <div class="row">
+        <h3 id="makeup-and-hairstyling">最佳化妆和发型设计MAKEUP AND HAIRSTYLING：</h3>
+        <ul>
+          <li><strong>《疯狂的麦克斯：狂暴之路》</strong></li>
+          <li>《百岁老人跷家去》</li>
+          <li>《荒野猎人》</li>
+        </ul>
+      </div>
+      <div class="row">
+        <h3 id="sound-mixing">最佳音效剪辑SOUND MIXING：</h3>
+        <ul>
+          <li><strong>《疯狂的麦克斯：狂暴之路》</strong></li>
+          <li>《星球大战：原力觉醒》</li>
+          <li>《荒野猎人》</li>
+          <li>《火星救援》</li>
+          <li>《边境杀手》</li>
+        </ul>
+      </div>
+      <div class="row">
+        <h3 id="sound-editing">最佳音响效果SOUND EDITING：</h3>
+        <ul>
+          <li>《间谍之桥》</li>
+          <li><strong>《疯狂的麦克斯：狂暴之路》</strong></li>
+          <li>《星球大战：原力觉醒》</li>
+          <li>《荒野猎人》</li>
+          <li>《火星救援》</li>
+        </ul>
+      </div>
+      <div class="row">
+        <h3 id="short-film-live-action">最佳真人短片SHORT FILM (Live Action)：</h3>
+        <ul>
+          <li>《万福玛丽亚》“Ave Maria” Basil Khalil and Eric Dupont</li>
+          <li>《第一天》“Day One” Henry Hughes</li>
+          <li>《一切都会好起来》“Everything Will Be Okay (Alles Wird Gut)” Patrick Vollrath</li>
+          <li><strong>《口吃》“Shok” Jamie Donoughue</strong></li>
+          <li>《舒克》“Stutterer” Benjamin Cleary and Serena Armitage</li>
+        </ul>
+      </div>
+      <div class="row">
+        <h3 id="short-film-animated">最佳动画短片SHORT FILM (Animated)：</h3>
+        <ul>
+          <li><strong>《熊的故事》“Bear Story” Gabriel Osorio and Pato Escala</strong></li>
+          <li>《序幕》“Prologue” Richard Williams and Imogen Sutton</li>
+          <li>《桑杰的超级团队》“Sanjay’s Super Team” Sanjay Patel and Nicole Grindle</li>
+          <li>《没有宇宙我们无法生存》“We Can’t Live without Cosmos” Konstantin Bronzit</li>
+          <li>《今夕何夕》“World of Tomorrow” Don Hertzfeldt</li>
+        </ul>
+      </div>
+      <div class="row">
+        <h3 id="documentary-short-subject">最佳纪录短片DOCUMENTARY (Short Subject)：</h3>
+        <ul>
+          <li>《12号收尸队》“Body Team 12” David Darg and Bryn Mooser</li>
+          <li>《墙内的战争》“Chau, beyond the Lines” Courtney Marsh and Jerry Franck</li>
+          <li>《克劳迪·兰兹曼：
+            <浩劫>
+            之魂》“Claude Lanzmann: Spectres of the Shoah” Adam Benzin</li>
+          <li><strong>《河中女孩：宽恕的代价》“A Girl in the River: The Price of Forgiveness” Sharmeen Obaid-Chinoy</strong></li>
+          <li>《最后的自由时光》“Last Day of Freedom” Dee Hibbert-Jones and Nomi Talisman</li>
+        </ul>
+      </div>
+      <div class="row">
+        <h3 id="lifetime-achievement-award">终身成就奖Lifetime Achievement Award：</h3>
+        <ul>
+          <li><strong>黛比·雷诺斯、吉娜·罗兰兹、斯派克·李</strong></li>
+        </ul>
+      </div>
     </main>
   </div><!-- .col-sm-9 -->
   <div class="col-sm-3 hidden-xs">
-    <aside>affix</aside>
+    <aside id="myAffix" data-spy="affix" data-offset-top="500" data-offset-bottom="140">
+      <ul class="nav">
+        <li><a href="#best-picture">最佳影片</a></li>
+        <li><a href="#directing">最佳导演</a></li>
+        <li><a href="#actor-in-a-leading-role">最佳男主角</a></li>
+        <li><a href="#actress-in-a-leading-role">最佳女主角</a></li>
+        <li><a href="#actor-in-a-supporting-role">最佳男配角</a></li>
+        <li><a href="#actress-in-a-supporting-role">最佳女配角</a></li>
+        <li><a href="#writing-original-screenplay">最佳原创剧本</a></li>
+        <li><a href="#writing-adapted-screenplay">最佳改编剧本</a></li>
+        <li><a href="#foreign-language-film">最佳外语片</a></li>
+        <li><a href="#documentary-feature">最佳纪录片</a></li>
+        <li><a href="#animated-feature-film">最佳动画长片</a></li>
+        <li><a href="#cinematography">最佳摄影</a></li>
+        <li><a href="#film-editing">最佳剪辑</a></li>
+        <li><a href="#costume-design">最佳服装设计</a></li>
+        <li><a href="#production-design">最佳艺术指导</a></li>
+        <li><a href="#music-original-score">最佳作曲</a></li>
+        <li><a href="#music-original-song">最佳原创歌曲</a></li>
+        <li><a href="#visual-effects">最佳视觉效果</a></li>
+        <li><a href="#makeup-and-hairstyling">最佳化妆和发型设计</a></li>
+        <li><a href="#sound-mixing">最佳音效剪辑</a></li>
+        <li><a href="#sound-editing">最佳音响效果</a></li>
+        <li><a href="#short-film-live-action">最佳真人短片</a></li>
+        <li><a href="#short-film-animated">最佳动画短片</a></li>
+        <li><a href="#documentary-short-subject">最佳纪录短片</a></li>
+        <li><a href="#lifetime-achievement-award">终身成就奖</a></li>
+      </ul>
+      <ul class="return-to-top"><a href="#">回到顶部</a></ul>
+    </aside>
   </div><!-- .col-sm-3 -->
 </div><!-- #forMain -->
-<div id="forFooter"><footer>各种a</footer></div>
+<div id="forFooter">
+  <footer class="contianer">
+    <p>2015-2016学年 第三学期 数字媒体技术大作业</p>
+    <p>by 李昊 李毅斌 郭佳灵</p>
+  </footer>
+</div>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
 <script src="js/jquery.min.js"></script> 
 <!-- Include all compiled plugins (below), or include individual files as needed --> 

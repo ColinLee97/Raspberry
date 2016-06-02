@@ -1,46 +1,19 @@
-/* 导航栏 */
+/* 正文 */
 body {
 	padding-top: 70px;
-}
-
-nav {
-	//background-color: rgba(21,227,64,.5);
-}
-
-/* 排版 */
-body {
-	text-align:center
-}
-
-div.row {
-	margin-bottom: 50px;
-	height: 200px;
-}
-
-div.row + .row {
-	margin-bottom: 100px;
-	height: 600px;
 }
 
 #forMain {
 	margin-bottom: 20px;
 }
 
-footer {
-	height: 100px;
-}
-
-#forFooter {
-	margin-bottom: 0px;
-}
-
-
-/* 颜色 */
-div.row, footer {
+div.row {
+	margin-bottom: 50px;
+	height: 200px;
 	background-color:#14C8D7;
 }
 
-nav {
-	//background-color: #15E340;
-	background-color: rgba(21,227,64,.5);
+div.row + .row {
+	margin-bottom: 100px;
+	height: 600px;
 }
