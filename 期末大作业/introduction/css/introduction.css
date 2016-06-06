@@ -1,16 +1,32 @@
+#forNav nav{
+	background-color: rgba(248,248,248,.5);
+}
+
 /* 封面 */
 #forHeader {
 	margin-bottom: 100px;
 }
 
 header {
-	height: 600px;
+	//height: 600px;
 	background-color:#14C8D7;
+}
+
+@media (max-width: 1199px) {
+	header picture img {
+		width: 100%;
+	}
+}
+
+header picture img {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 /* 正文 */
 body {
-	padding-top: 50px;
+	//padding-top: 50px;
 }
 
 #forMain {

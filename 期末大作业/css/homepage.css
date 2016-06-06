@@ -1,6 +1,10 @@
+.navbar-default {
+	background-color:transparent;
+}
+
 /* 标题 */
 body {
-	padding-top: 50px;
+	//padding-top: 50px;
 }
 
 /* 正文 */
@@ -9,15 +13,40 @@ body {
 }
 
 div.row {
-	margin-bottom: 200px;
-	height: 1000px;
-	background-color:#14C8D7;
+	margin-bottom: 33vh;
+	max-height: 1000px;
+	//background-color:#14C8D7;
 }
 
-div.row + .row {
-	height: 600px;
+img {
+	width: 100%;
 }
 
 div.row:last-child {
 	margin-bottom: 150px;
+}
+
+
+.col-md-3 img {
+	max-height: 100vh;
+	width: auto;
+}
+
+.col-md-3 a {
+	opacity: 0.6;
+}
+
+.col-md-3 a:hover,
+.col-md-3 a:active {
+	opacity: 1;
+}
+
+.img-holder {
+	position: relative;
+}
+
+.img-holder a {
+	position: absolute;
+	right: 20vw;
+	bottom: 20vh;
 }
