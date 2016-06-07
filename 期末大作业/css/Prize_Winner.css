@@ -5,11 +5,7 @@ body {
 
 #forHeader {
 	margin-bottom: 20px;
-	background-color:#14C8D7;
-}
-
-header {
-	height: 500px;
+	width: 100%;
 }
 
 /* 主体 */

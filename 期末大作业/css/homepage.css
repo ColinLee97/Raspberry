@@ -48,5 +48,9 @@ div.row:last-child {
 .img-holder a {
 	position: absolute;
 	right: 20vw;
-	bottom: 20vh;
+	bottom: 45%;
+}
+
+legend {
+	text-align: center;
 }

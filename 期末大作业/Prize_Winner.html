@@ -45,7 +45,11 @@
     </div><!-- .container -->
   </nav>
 </div>
-<div id="forHeader" class="container-fluid"><header>2.封面标题 获奖名单</header></div>
+<div id="forHeader" class="container-fluid">
+  <header>
+    <img class="img-responsive" src="pic/prize-winner.jpg" alt="prize-winner">
+  </header>
+</div>
 <div id="forMain" class="container">
   <div class="col-sm-9">
     <main>
@@ -301,7 +305,7 @@
     </main>
   </div><!-- .col-sm-9 -->
   <div class="col-sm-3 hidden-xs">
-    <aside id="myAffix" data-spy="affix" data-offset-top="500" data-offset-bottom="140">
+    <aside id="myAffix" data-spy="affix">
       <ul class="nav">
         <li><a href="#best-picture">最佳影片</a></li>
         <li><a href="#directing">最佳导演</a></li>
@@ -343,5 +347,20 @@
 <script src="js/jquery.min.js"></script> 
 <!-- Include all compiled plugins (below), or include individual files as needed --> 
 <script src="js/bootstrap.min.js"></script> 
+<script>
+function setAffix() {
+	$('#myAffix').affix({
+	  offset: {
+		  top: function() {return $("#best-picture").offset().top;},
+		  bottom: "140"
+	  }
+	})
+}
+
+setAffix();
+
+$(window).resize(function() {return setAffix();});
+
+</script>
 </body>
 </html>
