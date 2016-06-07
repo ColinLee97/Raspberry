@@ -7,11 +7,6 @@
 	margin-bottom: 100px;
 }
 
-header {
-	//height: 600px;
-	background-color:#14C8D7;
-}
-
 @media (max-width: 1199px) {
 	header picture img {
 		width: 100%;
@@ -36,7 +31,7 @@ body {
 div.row {
 	margin-bottom: 100px;
 	min-height: 200px;
-	background-color:#14C8D7;
+	//background-color:#14C8D7;
 }
 
 /* 演员介绍 */
@@ -49,3 +44,22 @@ div.row {
 	height: 100%;
 }
 
+/* img-holder-content */
+.img-holder {
+	position: relative;
+}
+	
+.img-content {
+	text-align: center;
+	font-weight: bold;
+}
+
+@media (min-width: 768px) {	
+	.img-content {
+		position: absolute;
+		top: 45%;
+		left: 50vw;
+		top: 30%;
+		left: 15vw;
+	}
+}
