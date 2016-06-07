@@ -11,10 +11,23 @@ body {
 /* 主体 */
 #forMain {
 	margin-bottom: 20px;
+	text-align: center;
 }
 
 div.row {
 	margin-bottom: 20px;
+}
+
+main ul li{
+	list-style-type: none;
+}
+
+main ul {
+	padding-left: 0;
+}
+
+main {
+	background-color: #f0f0f0;
 }
 
 /* affix */

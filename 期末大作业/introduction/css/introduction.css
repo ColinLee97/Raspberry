@@ -1,18 +1,4 @@
-#forNav nav{
-	background-color: rgba(248,248,248,.5);
-}
-
 /* 封面 */
-#forHeader {
-	margin-bottom: 100px;
-}
-
-@media (max-width: 1199px) {
-	header picture img {
-		width: 100%;
-	}
-}
-
 header picture img {
 	width: 100%;
 	margin-left: auto;
@@ -20,9 +6,6 @@ header picture img {
 }
 
 /* 正文 */
-body {
-	//padding-top: 50px;
-}
 
 #forMain {
 	margin-bottom: 20px;
@@ -31,17 +14,24 @@ body {
 div.row {
 	margin-bottom: 100px;
 	min-height: 200px;
-	//background-color:#14C8D7;
 }
 
 /* 演员介绍 */
 #actor-intro .col-sm-4 {
 	padding: 20px;
-	background-color: #E8EC63;
 	border-left-width: 2px;
 	border-left-color: #FFFFFF;
 	border-left-style: solid;
 	height: 100%;
+}
+
+#actor-intro {
+	text-align: center;
+}
+
+#actor-intro img {
+	margin-left: auto;
+	margin-right: auto;
 }
 
 /* img-holder-content */
@@ -57,9 +47,18 @@ div.row {
 @media (min-width: 768px) {	
 	.img-content {
 		position: absolute;
-		top: 45%;
-		left: 50vw;
 		top: 30%;
+	}
+	
+	.img-content-left {
 		left: 15vw;
+	}
+	
+	.img-content-middle {
+		left: 40vw;
+	}
+	
+	.img-content-right {
+		right: 15vw;
 	}
 }

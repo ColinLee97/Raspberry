@@ -4,8 +4,8 @@ body {
 }
 
 /* 导航栏 */
-nav {
-	//background-color: rgba(21,227,64,.5);
+.navbar-default {
+	background-color: rgba(248,248,248,.5);
 }
 
 /* 脚注 */
