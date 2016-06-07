@@ -9,11 +9,30 @@ body {
 
 div.row {
 	margin-bottom: 50px;
-	height: 200px;
-	background-color:#14C8D7;
+	//height: 200px;
+	//background-color:#14C8D7;
 }
 
 div.row + .row {
 	margin-bottom: 100px;
-	height: 600px;
+	//height: 600px;
+}
+
+/* Carousel */
+#myCarousel img {
+	height: 90vh;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Modal */
+.modal-dialog {
+	margin-left: 1vw;
+	margin-right: 1vw;
+	min-height: 100vh;
+	width: 97vw;
+}
+
+.modal-content {
+	height: 95vh;
 }
