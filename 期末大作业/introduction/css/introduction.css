@@ -5,15 +5,14 @@ header picture img {
 	margin-right: auto;
 }
 
-/* 正文 */
-
-#forMain {
-	margin-bottom: 20px;
+#forHeader {
+	margin-bottom: 10vh;
 }
 
-div.row {
-	margin-bottom: 100px;
-	min-height: 200px;
+/* 正文 */
+#forMain,
+#actor-intro {
+	margin-bottom: 5vh;
 }
 
 /* 演员介绍 */
@@ -47,18 +46,52 @@ div.row {
 @media (min-width: 768px) {	
 	.img-content {
 		position: absolute;
-		top: 30%;
+		top: 45%;
+		transform: translate(-50%,-50%);
 	}
 	
 	.img-content-left {
-		left: 15vw;
+		left: 25vw;
 	}
 	
 	.img-content-middle {
+		top: 40%;
 		left: 40vw;
 	}
 	
 	.img-content-right {
-		right: 15vw;
+		left: 80vw;
 	}
+}
+
+/* Modal */
+.col-sm-4 > button {
+	margin: 0;
+	padding: 2px;
+	border: 0;
+}
+
+.col-sm-4 >button:hover,
+.col-sm-4 >button:focus {
+	padding: 0;
+	border: 2px solid #0af;
+}
+
+#actor-intro .modal {
+	text-align: left;
+}
+
+.modal-hedaer button {
+	display: inline-block;
+}
+
+/* 影评 */
+legend,
+#film-intro h2 {
+	text-align: center;
+}
+
+#film-intro p {
+	font-size: large;
+	line-height: 1.5;
 }

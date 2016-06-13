@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 <title>《房间》</title>
 <link href="../../css/bootstrap.min.css" rel="stylesheet">
 <link href="../../css/general.css" rel="stylesheet">
@@ -12,7 +12,7 @@
 
 <body>
 <div id="forNav" class="container-fluid">
-  <nav class="navbar navbar-default navbar-fixed-top">
+  <nav class="navbar navbar-default navbar-fixed-top navbar-transparent">
     <div class="container">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar" aria-expanded="false">
@@ -46,9 +46,9 @@
   </nav>
 </div>
 <div id="forHeader" class="container-fluid">
-  <div class="row">
-    <header>
-      <picture class="">
+  <div class="row header">
+    <header class="img-holder">
+      <picture>
         <source media="(min-width: 1200px)" srcset="pic/large.jpg">
         <source media="(min-width: 768px)" srcset="pic/middle.jpg">
         <img src="pic/small.jpg" alt="poster">
@@ -56,7 +56,7 @@
       <div class="img-content img-content-right">
         <h1>《房间》</h1>
         <p class="lead">豆瓣评分 8.8/10</p>
-        <a class="btn btn-danger btn-lg" href="#" role="button">观看预告片</a>
+        <a class="btn btn-danger btn-lg" href="http://v.youku.com/v_show/id_XMTMzODgwODY0MA==.html?from=s1.8-1-1.2" target="_blank" role="button">观看预告片</a>
       </div>
     </header>
   </div><!-- .row -->
@@ -68,39 +68,107 @@
         <legend>演职员介绍</legend>
         <div class="col-sm-4">
           <h2>导演</h2>
-          <img class="img-responsive" src="pic/director.jpg" alt="兰纳德•阿伯拉罕森">
+          <button type="button" class="btn hidden-xs" data-toggle="modal" data-target="#director">
+            <img class="img-responsive" src="pic/director.jpg" alt="兰纳德•阿伯拉罕森">
+          </button>
+          <img class="img-responsive visible-xs-block" src="pic/director.jpg" alt="兰纳德•阿伯拉罕森">
           <p>兰纳德•阿伯拉罕森</p>
           <p>Leonard "Lenny" Abrahamson</p>
+          <!-- Modal -->
+          <div class="modal fade" id="director" tabindex="-1" role="dialog" aria-labelledby="director-intro">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4>兰纳德·阿伯拉罕森（Leonard &quot;Lenny&quot; Abrahamson）<button type="button" class="close" data-dismiss="modal" aria-label="关闭"><span aria-hidden="true">&times;</span></button></h4>
+                </div>
+                <div class="modal-body">
+                  <p>2004年，导演处女作长片《亚当与保罗》，获爱尔兰电影电视学院奖最佳导演奖。</p>
+                  <p>2007年，凭《车库》获第60届戛纳国际电影节国际艺术院线协会奖。</p>
+                  <p>2012年，导演小说改编电影《理查所为》，获第10届爱尔兰电影电视学院奖最佳影片、导演六项重量大奖提名。</p>
+                  <p>2014年，导演迈克尔·法斯宾德主演电影《弗兰克》，获第17届英国独立电影奖最佳导演提名。</p>
+                  <p>2016年，凭《房间》获得第88届奥斯卡金像奖最佳导演奖提名。</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary" data-dismiss="modal">关闭</button>
+                </div>
+              </div><!-- .-content -->
+            </div><!-- .-dialog -->
+          </div><!-- .modal -->
         </div>
         <div class="col-sm-4">
           <h2>男主角</h2>
-          <img class="img-responsive" src="pic/actor.jpg" alt="威廉•H•梅西">
+          <button type="button" class="btn hidden-xs" data-toggle="modal" data-target="#actor">
+            <img class="img-responsive" src="pic/actor.jpg" alt="威廉•H•梅西">
+          </button>
+          <img class="img-responsive visible-xs-block" src="pic/actor.jpg" alt="威廉•H•梅西">
           <p>威廉•H•梅西</p>
           <p>William H.Macy</p>
+           <!-- Modal -->
+          <div class="modal fade" id="actor" tabindex="-1" role="dialog" aria-labelledby="actor-intro">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4>威廉·H·梅西（William H.Macy）<button type="button" class="close" data-dismiss="modal" aria-label="关闭"><span aria-hidden="true">&times;</span></button></h4>
+                </div>
+                <div class="modal-body">
+                  <p>1950年生于美国，美国演员、编剧、导演、制作人。出生于佛罗里达州的迈阿密，因犯罪喜剧片《冰血暴》获得奥斯卡最佳男配角奖提名。</p>
+                  <p>2003年因电视剧《推销员》获得艾美奖迷你剧和电视电影最佳男主角以及最佳编剧奖。其代表作品还有《无耻之徒》、《孤独的少女》、《布公仔圣诞奇遇》等。</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary" data-dismiss="modal">关闭</button>
+                </div>
+              </div><!-- .-content -->
+            </div><!-- .-dialog -->
+          </div><!-- .modal -->
         </div>
         <div class="col-sm-4">
           <h2>女主角</h2>
-          <img class="img-responsive" src="pic/actress.jpg" alt="布丽•拉尔森德">
+          <button type="button" class="btn hidden-xs" data-toggle="modal" data-target="#actress">
+            <img class="img-responsive" src="pic/actress.jpg" alt="布丽•拉尔森德">
+          </button>
+          <img class="img-responsive visible-xs-block" src="pic/actress.jpg" alt="布丽•拉尔森德">
           <p>布丽•拉尔森</p>
           <p>Brie Larson</p>
+          <!-- Modal -->
+          <div class="modal fade" id="actress" tabindex="-1" role="dialog" aria-labelledby="actress-intro">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4>布丽·拉尔森（Brie Larson）<button type="button" class="close" data-dismiss="modal" aria-label="关闭"><span aria-hidden="true">&times;</span></button></h4>
+                </div>
+                <div class="modal-body">
+                  <p>1989年出生于美国加利福尼亚州，美国演员、制作人、导演、编剧。15岁就发行了首张专辑，之后参加多部影视作品的拍摄，并获得多个最佳女主角奖项。</p>
+                  <p>2013年布丽·拉尔森出演影片《少年收容所》赢得了第23届哥谭独立电影奖最佳女主角。第66届瑞士洛迦诺国际电影节最佳女演员奖。</p>
+                  <p>2015年布丽·拉尔森出演了由雷尼·亚伯拉罕森执导的影片《房间》。该片获得了第40届多伦多国际电影节观众选择奖，同时自己也获得了第87届美国国家评论协会奖最佳女主角，芝加哥影评人协会奖、凤凰城影评人协会奖、拉斯维加斯影评人协会奖等多个最佳女主角。</p>
+                  <p>2016年获得第73届美国金球奖最佳女主角。</p>
+                  <p>2016年主演电影《房间》，最终于第88届奥斯卡颁奖典礼上问鼎最佳女主角。</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary" data-dismiss="modal">关闭</button>
+                </div>
+              </div><!-- .-content -->
+            </div><!-- .-dialog -->
+          </div><!-- .modal -->
         </div>
       </fieldset>
     </div>
-    <div class="row">
-      <h2 id="影片概览">影片概览：</h2>
-      <p>《房间》是由兰纳德•阿伯拉罕森执导，布丽•拉尔森、雅各布•特瑞布雷、威廉姆•H•梅西等主演的剧情片。该片于2016年1月15日在爱尔兰上映。 该片改编自爱玛•多诺霍的同名原著小说，讲述了一个女孩被邻居所骗，之后被囚禁在一个狭小的房间里长达七年之久的故事。</p>
-      <h2 id="剧情介绍">剧情介绍：</h2>
-      <p>女孩乔伊（布丽•拉尔森 Brie Larson 饰）被一个叫“老尼克”的男人拐骗，之后被他囚禁在其房子后院的棚屋里长达七年之久。在此期间她遭到强奸，并生下儿子杰克（雅各布•特伦布莱 Jacob Tremblay 饰）。靠着老尼克时不时的物资补给，母子二人艰难度日。尽管如此，母亲还是竭尽所能，为儿子杰克创造了一个安全而开心的成长空间。这个狭小逼仄的房间，成了杰克生活成长的神奇小天地。在杰克度过了他的五岁生日后，母亲决定告诉他真相，在这个小小的房间外面，有着更广阔的世界。他们开始策划逃跑计划，决心要逃出这个囚禁他们的房间……</p>
-      <h2 id="本片看点">本片看点：</h2>
-      <p>该片是一部小格局的独立片，基本上是两个人的独角戏以及不多的场景，但是独特的视角与残酷感人的故事却打动了很多人的心。 该片忠实地根据图书改编，通过这种看似有限的叙述视角，制造出一种“身在绝境却不感知”的反衬效果，最终得以实现“讲述一个有点恐怖的故事的真正价值”。该作品没有催泪的企图，反而处处透出人类最为纯净的亲情。五岁的杰克打动了每个人的心，他的声音、他的遭遇、他的天真、他的幽默、他对妈妈的爱，使得故事虽然设定在邪恶的前提上，却仍令人感受到希望与力量。</p>
-      <h2 id="精彩影评">精彩影评：</h2>
-      <ol>
-        <li>小男孩才是真正的主角，故事站在受害者的视角上，讲心理自救，母亲努力让儿子和同龄的孩子一样，故事选择了一个非常有趣的切入点，环境改变到内心改变，一切都以小男孩的情绪展开，很有难度，所幸小男孩的演技是奥斯卡级别的，剧本是模式化的类型片写法，前一个小时非常完美，拍的工工整整。</li>
-        <li>小童星的演技天分闪耀，令人惊叹，不是该给个表演奖的问题，是险些威胁了小李子。故事讲述了两次出逃：一次是物理性、空间性的；一次是精神性的“心牢”，说导演后半段跑题走偏的，大概心理预期只满足于看个惊悚片。原声音乐的作者是谁？中间高潮部分完全照搬《点球成金》的一段旋律，听得也是出戏。</li>
-      </ol>
-      <h2 id="参考资料">参考资料：</h2>
-      <p>豆瓣电影： <a href="https://movie.douban.com/subject/25724855/comments" class="uri">https://movie.douban.com/subject/25724855/comments</a></p>
-    </div>
+    <div id="film-intro" class="row">
+      <div class="col-xs-12">
+	    <fieldset><legend>影评</legend></fieldset>
+		<h2><strong>自由对于人性到底有多重要</strong></h2>
+		<p>《房间》是由兰纳德·阿伯拉罕森执导，布丽·拉尔森、雅各布·特瑞布雷、威廉姆·H·梅西等主演的剧情片。该片于2016年1月15日在爱尔兰上映。该片改编自爱玛·多诺霍的同名原著小说，讲述了一个女孩被邻居所骗，之后被囚禁在一个狭小的房间里长达七年之久的故事。</p>
+		<p>» » »</p>
+		<p>影片讲述了女孩乔伊（布丽·拉尔森 Brie Larson 饰）被一个叫“老尼克”的男人拐骗，之后被他囚禁在其房子后院的棚屋里长达七年之久。在此期间她遭到强奸，并生下儿子杰克（雅各布·特伦布莱 Jacob Tremblay 饰）。靠着老尼克时不时的物资补给，母子二人艰难度日。尽管如此，母亲还是竭尽所能，为儿子杰克创造了一个安全而开心的成长空间。这个狭小逼仄的房间，成了杰克生活成长的神奇小天地。在杰克度过了他的五岁生日后，母亲决定告诉他真相，在这个小小的房间外面，有着更广阔的世界。他们开始策划逃跑计划，决心要逃出这个囚禁他们的房间……</p>
+		<p>» » »</p>
+		<p>没见过自由会害怕自由。在这个房间内，乔伊本是自由世界的来客，一朝被囚，当然无时无刻不想着争脱牢笼，受儿子读《艾丽丝梦游仙境》故事的启发，她打算不再等待，她思筹着自救计划，但她需要人帮助。然而，儿子杰克此前一直生活在她为他编织的童话世界中，甚至不知道一墙之隔的房间外另有天地，于是，她改变以往教育儿子的策略，告诉他墙外的世界很精彩，以此引导儿子对外面自由世界的向往。然而，结果如何呢？当她告诉自由世界的真相时，儿子的回答是“不可能”，甚至说她是个“骗子”；当她说儿子5岁了应当帮她来改变现在的生存状况时，儿子说“我想回到4岁”；当她告知儿子自己悲惨的被拐骗经历时，儿子怒吼这故事太无聊；当她说这是个臭房间时，儿子根本就不认同。无奈，她只能跟儿子搞起“冷战”。这个结果很容易让我们想到什么吧！当了解自由的人告诉从不知自由为何物的人自由的真相时，与其说是告知“真相”，不如说是引起了“恐慌”，因为人性对未知世界都有本能的恐惧；如果告知“真相”的行为逼得太紧了，这就很容易被认为是“骗子”行为，因为人们对看不见，摸不着的东西持有本能的怀疑；在“得不到”和“已拥有”之间，人们会更珍视后者。所以，我们也就理解了，为什么人们有时会害怕自由了。</p>
+		<p>自由在比较中方显它的重要。杰克和母亲逃出“房间”进入自由世界后，在跟其他人交流过程中还多次提到“房间”，甚至还要求回去看看，而母亲乔伊对那个地方早已讳莫如深。乔伊的反应我们非常能理解，因为“房间”是她一生的噩梦；但杰克的反应是否还说明这个突然获得自由的人仍怀念那个曾让他不自由的世界呢？显然不能这样理解。因为在这之前，他从未感受过不自由，而且他被母亲保护得很好，那里没有他痛苦的回忆，反而，那里是他对快乐、对母爱感受最集中的地方，杰克想回“房间”再看看，跟我们想回故乡看看的情感是一样的，他的这种反应正说明他的心智发展是正常的。但在回到“房间”后，显然杰克开始体会到自由的重要了。他感觉到“房间”缩小了，不想再将房间的门关上了。从杰克对房间态度的转变，说明他感受到了“自由”的好处，即使对“房间”内的每一物件都充满感情，但他也不会放弃外部自由世界的好。虽然是个小孩子的故事，但它反映了人性特征是普遍性的，而且它为我们思考自由的某些问题提供了实验性的一手资料。由此，我们终于明白：在当今世界，为什么某些国家的统治者那么害怕人民了解自由，那么害怕自由世界的东西在国内传播了，因为关起门来他可称老大，一旦开了门他就屁都不是。至此，大家可能也相信本片的政治隐喻了吧，它分明就是在告诫某些有志传播自由理念的人该如何正确传播自由了。</p>
+		<p>» » »</p>
+		<p>该片是一部小格局的独立片，基本上是两个人的独角戏以及不多的场景，但是独特的视角与残酷感人的故事却打动了很多人的心。</p>
+		<p>该片忠实地根据图书改编，通过这种看似有限的叙述视角，制造出一种“身在绝境却不感知”的反衬效果，最终得以实现“讲述一个有点恐怖的故事的真正价值”。该作品没有催泪的企图，反而处处透出人类最为纯净的亲情。五岁的杰克打动了每个人的心，他的声音、他的遭遇、他的天真、他的幽默、他对妈妈的爱，使得故事虽然设定在邪恶的前提上，却仍令人感受到希望与力量。</p>
+		<p>参考资料：</p>
+		<p>豆瓣电影： <a href="https://movie.douban.com/subject/25724855/comments" target="_blank" class="uri">房间 短评</a></p>
+      </div><!-- .col-xs-12 -->
+    </div><!-- .row -->
   </main>
 </div>
 <div id="forFooter">
@@ -113,5 +181,6 @@
 <script src="../../js/jquery.min.js"></script> 
 <!-- Include all compiled plugins (below), or include individual files as needed --> 
 <script src="../../js/bootstrap.min.js"></script> 
+<script src="../../js/navtrans.js"></script>
 </body>
 </html>

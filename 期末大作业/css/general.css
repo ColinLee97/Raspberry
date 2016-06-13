@@ -1,11 +1,100 @@
-/* 全局 */
-body {
-	//text-align:center;
-}
-
 /* 导航栏 */
 .navbar-default {
-	background-color: rgba(248,248,248,.5);
+	background-color: rgba(248,248,248,1);
+}
+
+.navbar-transparent {
+
+}
+/** 当前状态指示条 **/
+.navbar-nav {
+	padding-left: 10px;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:focus {
+	background-color: transparent;
+}
+
+.navbar-nav > li > a:hover,
+.navbar-nav > .open > a,
+.navbar-nav > .open > a:hover,
+.navbar-nav > .open > a:focus {
+	border-left: 3px solid #805500;
+	padding-left: 12px;
+}
+
+.navbar-default .navbar-nav > .active > a {
+	border-left: 3px solid #b7a261;
+	padding-left: 12px;
+}
+
+/*** 针对非移动产品 ***/
+@media (min-width: 768px) {	
+    .navbar-default .navbar-nav > .active > a,
+	.navbar-default .navbar-nav > li > a:hover,
+	.navbar-nav > .open > a,
+	.navbar-nav > .open > a:focus {
+		padding-bottom: 7px;
+		border-bottom-width: 3px;
+		margin-bottom: 5px;
+		border-left-width: 0;
+		padding-left: 15px;
+	}
+	
+	.navbar-nav > li > a:hover,
+	.navbar-nav > .open > a,
+	.navbar-nav > .open > a:hover,
+	.navbar-nav > .open > a:focus {
+		border-bottom: 3px solid #805500;
+	}
+	
+	.navbar-default .navbar-nav > .active > a {
+		border-bottom: 3px solid #b7a261;
+	}
+}
+
+/** 透明导航栏 **/
+body {
+	padding-top: 50px;
+}
+
+@media (min-width: 768px) {
+	body {
+		padding-top: 0;
+	}
+	
+	.navbar-transparent {
+		background-color: transparent;
+		border-bottom-width: 0;
+	}
+	
+	.navbar-transparent .navbar-nav > .active > a {
+		background-color: transparent;
+	}
+	
+	.navbar-transparent .navbar-nav > li > a,
+	.navbar-transparent .navbar-nav > .active > a,
+	.navbar-transparent .navbar-brand {
+		color: white;
+	}
+	/*** 动画效果 ***/
+	.navbar-default {
+		transition: background-color 0.3s ease;
+		-webkit-transition: background-color 0.3s ease;
+		-moz-transition: background-color 0.3s ease;
+		-o-transition: background-color 0.3s ease;
+	}
+	
+	.navbar-brand,
+	.navbar-nav a {
+		transition: color 0.3s ease;
+		-webkit-transition: color 0.3s ease;
+		-moz-transition: color 0.3s ease;
+		-o-transition: color 0.3s ease;		
+	}
 }
 
 /* 脚注 */

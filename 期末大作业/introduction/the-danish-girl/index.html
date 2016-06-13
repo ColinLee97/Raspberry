@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 <title>《丹麦女孩》</title>
 <link href="../../css/bootstrap.min.css" rel="stylesheet">
 <link href="../../css/general.css" rel="stylesheet">
@@ -12,7 +12,7 @@
 
 <body>
 <div id="forNav" class="container-fluid">
-  <nav class="navbar navbar-default navbar-fixed-top">
+  <nav class="navbar navbar-default navbar-fixed-top navbar-transparent">
     <div class="container">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar" aria-expanded="false">
@@ -46,7 +46,7 @@
   </nav>
 </div>
 <div id="forHeader" class="container-fluid">
-  <div class="row">
+  <div class="row header">
     <header class="img-holder">
       <picture class="">
         <source media="(min-width: 1200px)" srcset="pic/large.jpg">
@@ -56,7 +56,7 @@
       <div class="img-content img-content-left">
         <h1>《丹麦女孩》</h1>
         <p class="lead">豆瓣评分 8.0/10</p>
-        <a class="btn btn-danger btn-lg" href="#" role="button">观看预告片</a>
+        <a class="btn btn-danger btn-lg" href="http://v.youku.com/v_show/id_XMTMyNTM2Mzk0OA==.html?from=s1.8-3-1.1" target="_blank" role="button">观看预告片</a>
       </div>
     </header>
   </div><!-- .row -->
@@ -68,41 +68,113 @@
         <legend>演职员介绍</legend>
         <div class="col-sm-4">
           <h2>导演</h2>
-          <img class="img-responsive" src="pic/director.jpg" alt="汤姆•霍伯">
+          <button type="button" class="btn hidden-xs" data-toggle="modal" data-target="#director">
+            <img class="img-responsive" src="pic/director.jpg" alt="汤姆•霍伯">
+          </button>
+          <img class="img-responsive visible-xs-block" src="pic/director.jpg" alt="汤姆•霍伯">
           <p>汤姆•霍伯</p>
           <p>Tom Hooper</p>
+          <!-- Modal -->
+          <div class="modal fade" id="director" tabindex="-1" role="dialog" aria-labelledby="director-intro">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4>汤姆·霍伯（Tom Hooper）<button type="button" class="close" data-dismiss="modal" aria-label="关闭"><span aria-hidden="true">&times;</span></button></h4>
+                </div>
+                <div class="modal-body">
+                  <p>1972年出生于英国伦敦，毕业于牛津大学，英国导演、制作人。</p>
+                  <p>2002年，汤姆·霍伯因执导迷你剧《丹尼尔的半生缘》而出道。</p>
+                  <p>2005年，执导传记片《伊丽莎白一世》，该片获得第58届艾美奖电视电影类-最佳迷你剧。</p>
+                  <p>2010年，凭借励志片《国王的演讲》获得第83届奥斯卡最佳导演奖。</p>
+                  <p>2012年，为了纪念法国作家雨果诞辰210周年暨《悲惨世界》出版150周年，执导剧情片《悲惨世界》。</p>
+                  <p>2015年，凭借传记片《丹麦女孩》获得第19届好莱坞电影奖最佳导演奖。</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary" data-dismiss="modal">关闭</button>
+                </div>
+              </div><!-- .-content -->
+            </div><!-- .-dialog -->
+          </div><!-- .modal -->
         </div>
         <div class="col-sm-4">
           <h2>男主角</h2>
-          <img class="img-responsive" src="pic/actor.jpg" alt="埃迪•雷德梅尼">
+          <button type="button" class="btn hidden-xs" data-toggle="modal" data-target="#actor">
+            <img class="img-responsive" src="pic/actor.jpg" alt="埃迪•雷德梅尼">
+          </button>
+          <img class="img-responsive visible-xs-block" src="pic/actor.jpg" alt="埃迪•雷德梅尼">
           <p>埃迪•雷德梅尼</p>
           <p>Eddie Redmayne</p>
+           <!-- Modal -->
+          <div class="modal fade" id="actor" tabindex="-1" role="dialog" aria-labelledby="actor-intro">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4>埃迪·雷德梅尼（Eddie Redmayne）<button type="button" class="close" data-dismiss="modal" aria-label="关闭"><span aria-hidden="true">&times;</span></button></h4>
+                </div>
+                <div class="modal-body">
+                  <p>1982年出生于伦敦，是英国国家青年剧团团员。</p>
+                  <p>2009年获得奥利维尔奖最佳男配奖。</p>
+                  <p>2010年获得托尼奖最佳男配奖。</p>
+                  <p>2012年，他凭借《悲惨世界》中的马吕斯一角获得MTV电影奖-最具突破奖提名。</p>
+                  <p>2014年，加盟电影《丹麦女孩》饰演世界上第一个做变性手术的人。</p>
+                  <p>2015年1月12日凭借《万物理论》获得金球奖剧情类最佳男主角。同年2月23日获得第87届奥斯卡金像奖最佳男主角奖。</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary" data-dismiss="modal">关闭</button>
+                </div>
+              </div><!-- .-content -->
+            </div><!-- .-dialog -->
+          </div><!-- .modal -->
         </div>
         <div class="col-sm-4">
           <h2>女主角</h2>
-          <img class="img-responsive" src="pic/actress.jpg" alt="艾丽西卡•维坎德">
+          <button type="button" class="btn hidden-xs" data-toggle="modal" data-target="#actress">
+            <img class="img-responsive" src="pic/actress.jpg" alt="艾丽西卡•维坎德">
+          </button>
+          <img class="img-responsive visible-xs-block" src="pic/actress.jpg" alt="艾丽西卡•维坎德">
           <p>艾丽西卡•维坎德</p>
           <p>Alicia Vikander</p>
+          <!-- Modal -->
+          <div class="modal fade" id="actress" tabindex="-1" role="dialog" aria-labelledby="actress-intro">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4>艾丽西卡·维坎德（Alicia Vikander）<button type="button" class="close" data-dismiss="modal" aria-label="关闭"><span aria-hidden="true">&times;</span></button></h4>
+                </div>
+                <div class="modal-body">
+                  <p>1988年出生于瑞典。</p>
+                  <p>2009年，在Lisa Langseth执导的电影《纯粹》里饰演女主角Katarina，凭借此片获得2011年金甲虫奖最佳女演员奖。</p>
+                  <p>2013年，获得英国电影学院奖EE新星奖的提名。</p>
+                  <p>2015年，艾丽西亚·维坎德有多部影片上映，凭借在《机械姬》《丹麦女孩》中的表演广受好评，获得金球奖、英国电影学院奖双料提名。</p>
+                  <p>2016年，凭借《丹麦女孩》获得第88届奥斯卡金像奖最佳女配角奖及美国演员工会奖最佳女配角奖。</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary" data-dismiss="modal">关闭</button>
+                </div>
+              </div><!-- .-content -->
+            </div><!-- .-dialog -->
+          </div><!-- .modal -->
         </div>
       </fieldset>
     </div><!-- #actor-intro -->
-    <div class="row">
-      <h2 id="影片概览">影片概览：</h2>
-      <p>《丹麦女孩》是由汤姆•霍伯执导，埃迪•雷德梅恩、艾丽西卡•维坎德、本•威士肖等主演的传记片。该片于2015年11月27日在美国上映。该片讲述了埃纳尔•韦格在妻子格尔达•韦格纳的鼓励下勇敢的接受了变性手术，成为了真正的女人的故事。 主人公是世界上最早有记录的变性人之一、充满传奇色彩的丹麦画家莉莉•艾尔比，他的妻子格尔达也是一位画家。一次偶然机会，沉睡在主人公内心的女性人格莉莉被唤醒，他开始厌恶自己作为男性的身体，也渐渐发现莉莉不但是艺术存在，更是真正的自己，两人的生活也随之发生了翻天覆地的变化。</p>
-      <h2 id="剧情介绍">剧情介绍：</h2>
-      <p>1926年哥本哈根，风景画家艾纳（埃迪•雷德梅恩 Eddie Redmayne 饰）和擅长人物画的格尔达（艾丽西亚•维坎德 Alicia Vikander 饰）结为夫妇。因为模特失约，格尔达为顺利完成画作说服了艾纳穿上女装救场。这次意外令艾纳多出一个女性人格“莉莉”，而后者亦成为妻子的灵感女神，让格尔达声名鹊起。只是随着沉睡女性人格的被唤醒，艾纳开始厌恶自己作为男性的身体，他渐渐发现莉莉不但是艺术存在，更是真正的自己。格尔达也没有想到只是临时起意的游戏，竟为自己人生投下了一颗震撼弹，她该如何继续爱她的伴侣？她们在各种社会非议和误解中不离不弃，最后格尔达鼓励艾纳彻底变成莉莉......</p>
-      <h2 id="本片看点">本片看点：</h2>
-      <p>本片精彩之处真是选择了跨性别题材。并且运用艺术化的故事直指变性人题材，并且也由真实故事改编。在《丹麦女孩》里，出演魏格纳的妻子格尔达是现年26岁的瑞典演员艾丽西亚•维坎德，她几乎要把她的拍档小雀斑的风头给抢了。在真实人生里，电影故事并没有改编得太过——正是如此的。格尔达1904年和艾纳结婚，然后她成了当时丹麦装饰艺术界最有声望的艺术家，并且在打破性别边界、重塑女性视野这方面走在时代之先。女性形象的创造通常是通过男性的角度。但格尔达改变了这一切，以其硬朗的、漂亮的女性形象塑造，且笔触充满着赞美、身份认同，即主体意识甚于客体意识。</p>
-      <h2 id="精彩影评">精彩影评：</h2>
-      <ol>
-        <li>说白了还是一个男性视角的故事，所有的一切都只于”他“的需求，”他“的渴望，”他&quot;的想法有关，而做一个女人，从来都不只是涂个口红，扭个臀部，和男人调情那么简单。全剧只看见了默默接受一切，只象征性的反抗那么一小下的Greta,导演真是太可笑了。</li>
-        <li>霍珀导演的老问题， 一味地调制人物心灵曲折挣扎最终得到救赎的鸡汤， 主要人物之间却缺乏有效地联系和互动，人物被分割成单独的个体，外部影响弱化成简单的肯定或否定的信号。就像是肖像画出类拔萃，而组合成人物风景图就显得呆板机械了。</li>
-      </ol>
-      <h2 id="参考资料">参考资料：</h2>
-      <ul>
-        <li>腾讯网订阅栏目： <a href="http://dy.qq.com/article.htm?id=20160225A01KPL00" class="uri">http://dy.qq.com/article.htm?id=20160225A01KPL00</a></li>
-      </ul>
-    </div>
+    <div id="film-intro" class="row">
+      <div class="col-xs-12">
+	    <fieldset><legend>影评</legend></fieldset>
+        <h2></strong>真爱并非艺术品</strong></h2>
+		<p>《丹麦女孩》是由汤姆·霍伯执导，埃迪·雷德梅恩、艾丽西卡·维坎德、本·威士肖等主演的传记片。该片于2015年11月27日在美国上映。该片讲述了埃纳尔·韦格在妻子格尔达·韦格纳的鼓励下勇敢的接受了变性手术，成为了真正的女人的故事。主人公是世界上最早有记录的变性人之一、充满传奇色彩的丹麦画家莉莉·艾尔比，他的妻子格尔达也是一位画家。一次偶然机会，沉睡在主人公内心的女性人格莉莉被唤醒，他开始厌恶自己作为男性的身体，也渐渐发现莉莉不但是艺术存在，更是真正的自己，两人的生活也随之发生了翻天覆地的变化。</p>
+		<p>» » »</p>
+		<p>1926年哥本哈根，风景画家艾纳（埃迪·雷德梅恩 Eddie Redmayne 饰）和擅长人物画的格尔达（艾丽西亚·维坎德 Alicia Vikander 饰）结为夫妇。因为模特失约，格尔达为顺利完成画作说服了艾纳穿上女装救场。这次意外令艾纳多出一个女性人格“莉莉”，而后者亦成为妻子的灵感女神，让格尔达声名鹊起。只是随着沉睡女性人格的被唤醒，艾纳开始厌恶自己作为男性的身体，他渐渐发现莉莉不但是艺术存在，更是真正的自己。格尔达也没有想到只是临时起意的游戏，竟为自己人生投下了一颗震撼弹，她该如何继续爱她的伴侣？她们在各种社会非议和误解中不离不弃，最后格尔达鼓励艾纳彻底变成莉莉......</p>
+		<p>这个故事本身是如此独特，如此不寻常，如此冲击心灵。一个人拥有美满的婚姻、蒸蒸日上的事业、正常而愉悦的生活，他突然间意识到自己真实的灵魂，没人逼他，选择权在他自己手上，要牺牲什么，会失去什么，他都一清二楚。然而他做出了选择，一个在此之前无人敢做的选择。他真正为自己而活。光是想想就知道这里面有多少复杂的感情，多跌宕的转折，该有多荡气回肠。</p>
+		<p>» » »</p>
+		<p>影片中有两个地方直戳泪点：一次是在Lily和男人接吻后回家，Gerda见他哭了，关切地握住他的手。真正的爱人就是这样的，比起诧异，比起责怪，更先想到的是关心，怕你在哪儿受了委屈，遭了欺负，而将自己的感受放置一边。还有一次是第二次手术做完，Lily终于在从高烧中醒来，苍白得像一只鬼魂，她哭着说她终于成为完整的自己了，眼泪里带笑。不得不为Eddie的演技心折，这哭很难让人不动容。</p>
+		<p>主演Eddie的演技十分精进。不光是体现在那场镜前的裸戏：他自恋地欣赏自己的躯体，幻想自己是个女人该有多美，然而悲哀地看见自己的器官，自欺欺人地将它藏起来，继续幻想自己是完美的。这个设计确实精妙。但我想夸的是他在影片中所有的眨眼。他仍是Einar时，是个比较内敛的男性，更多的像个男孩子，眨眼后腼腆地微笑。变身Lily后，刚开始是因为羞怯，后来是因为自我的释放，他的睫毛颤抖，然后轻轻垂下，同时嘴角含着一抹自然的笑，那神态实在是妩媚。他低头的幅度令他像一朵娇花，又或者一只逆风风行的蝴蝶，脆弱得让你不堪碰，正如本老师那角色所说，仿佛吻他之前要先获得允许。Eddie令这一角色成为了女人。每一个坐姿，每一次行走，换上新衣的旋转，抽烟时的自怜，都是真正的女人所为。不论他的女装扮相美或不美，他在他的周身散发出一种气场，那气场便叫做美丽。</p>
+		<p>» » »</p>
+		<p>现在有许多人想为LGBT人群发声，想让社会拥有更多的宽容和同理心。这都是很好的出发点。更多此类题材的电影出现是件让人欣慰的事。但是确实其中大多数的质量都不高。它们更多的是为了同志而同志，或者是没有理解真正理解他们的心态，只是出自编剧或导演自己的想象。</p>
+		<p>本片最精彩之处也主要是选择了跨性别题材。并且运用艺术化的故事直指变性人题材，并且也由真实故事改编。在《丹麦女孩》里，出演魏格纳的妻子格尔达是现年26岁的瑞典演员艾丽西亚•维坎德，她几乎要把她的拍档小雀斑的风头给抢了。在真实人生里，电影故事并没有改编得太过——正是如此的。格尔达1904年和艾纳结婚，然后她成了当时丹麦装饰艺术界最有声望的艺术家，并且在打破性别边界、重塑女性视野这方面走在时代之先。女性形象的创造通常是通过男性的角度。但格尔达改变了这一切，以其硬朗的、漂亮的女性形象塑造，且笔触充满着赞美、身份认同，即主体意识甚于客体意识。</p>
+		<p>参考资料：</p>
+		<p>腾讯网订阅栏目： <a href="http://dy.qq.com/article.htm?id=20160225A01KPL00" target="_blank" class="uri">丹麦女孩背后的真实故事，比电影更离奇_订阅_腾讯网</a></p>
+      </div><!-- .col-xs-12 -->
+    </div><!-- .row -->
   </main>
 </div>
 <div id="forFooter">
@@ -114,6 +186,7 @@
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
 <script src="../../js/jquery.min.js"></script> 
 <!-- Include all compiled plugins (below), or include individual files as needed --> 
-<script src="../../js/bootstrap.min.js"></script> 
+<script src="../../js/bootstrap.min.js"></script>
+<script src="../../js/navtrans.js"></script> 
 </body>
 </html>

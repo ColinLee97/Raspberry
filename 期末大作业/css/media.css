@@ -27,7 +27,9 @@ legend {
 }
 
 #myCarousel img {
-	height: 70vh;
+	max-height: 70vh;
+	height: auto;
+	width: auto;
 	margin-left: auto;
 	margin-right: auto;
 }

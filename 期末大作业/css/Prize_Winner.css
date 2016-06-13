@@ -1,13 +1,9 @@
 /* 封面标题 */
-body {
-	padding-top: 50px;
-}
-
 #forHeader {
 	margin-bottom: 20px;
 	width: 100%;
+	padding: 0;
 }
-
 /* 主体 */
 #forMain {
 	margin-bottom: 20px;
@@ -54,7 +50,6 @@ aside a {
 	margin-bottom: 10px !important;
 	padding-top: 0 !important;
 	padding-bottom: 0 !important;
-	//padding-bottom: 5px !important;
 }
 
 aside li.active a {

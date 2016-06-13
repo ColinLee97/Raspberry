@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 <title>《聚焦》</title>
 <link href="../../css/bootstrap.min.css" rel="stylesheet">
 <link href="../../css/general.css" rel="stylesheet">
@@ -12,7 +12,7 @@
 
 <body>
 <div id="forNav" class="container-fluid">
-  <nav class="navbar navbar-default navbar-fixed-top">
+  <nav class="navbar navbar-default navbar-fixed-top navbar-transparent">
     <div class="container">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar" aria-expanded="false">
@@ -46,9 +46,9 @@
   </nav>
 </div>
 <div id="forHeader" class="container-fluid">
-  <div class="row">
-    <header>
-      <picture class="">
+  <div class="row header">
+    <header class="img-holder">
+      <picture>
         <source media="(min-width: 1200px)" srcset="pic/large.jpg">
         <source media="(min-width: 768px)" srcset="pic/middle.jpg">
         <img src="pic/small.jpg" alt="poster">
@@ -56,7 +56,7 @@
       <div class="img-content img-content-middle">
         <h1>《聚焦》</h1>
         <p class="lead">豆瓣评分 7.8/10</p>
-        <a class="btn btn-danger btn-lg" href="#" role="button">观看预告片</a>
+        <a class="btn btn-danger btn-lg" href="http://v.youku.com/v_show/id_XMTMyMzcwNDE3Mg==.html?from=s1.8-3-1.1" target="_blank" role="button">观看预告片</a>
       </div>
     </header>
   </div><!-- .row -->
@@ -68,39 +68,119 @@
         <legend>演职员介绍</legend>
         <div class="col-sm-4">
           <h2>导演</h2>
-          <img class="img-responsive" src="pic/director.jpg" alt="托马斯•麦卡锡">
+          <button type="button" class="btn hidden-xs" data-toggle="modal" data-target="#director">
+            <img class="img-responsive" src="pic/director.jpg" alt="托马斯•麦卡锡">
+          </button>
+          <img class="img-responsive visible-xs-block" src="pic/director.jpg" alt="托马斯•麦卡锡">
           <p>托马斯•麦卡锡</p>
           <p>Thomas Mccarthy</p>
+          <!-- Modal -->
+          <div class="modal fade" id="director" tabindex="-1" role="dialog" aria-labelledby="director-intro">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4>托马斯·麦卡锡（Thomas Mccarthy）<button type="button" class="close" data-dismiss="modal" aria-label="关闭"><span aria-hidden="true">&times;</span></button></h4>
+                </div>
+                <div class="modal-body">
+                  <p>1966年出生于美国新泽西州，演员、编剧、导演。</p>
+                  <p>2003年，凭首部编导电影《心灵驿站》，获得第57届英国电影学院奖最佳原创剧本奖及圣丹斯电影节编剧奖。</p>
+                  <p>2007年，执导电影《不速之客》，获意大利大卫奖最佳外国电影。</p>
+                  <p>2009年，合作编剧动画长片《飞屋环游记》，获第82届奥斯卡奖最佳原创剧本提名。</p>
+                  <p>2011年，编导电影《双赢》。</p>
+                  <p>2014年，编导电影《鞋匠人生》。</p>
+                  <p>2015年，编导电影《聚焦》上映，在洛杉矶举行的第19届好莱坞电影奖上，获得最佳编剧奖。</p>
+                  <p>2016年2月，其作品《聚焦》在第88届奥斯卡金像奖入围六项提名，最终获得最佳影片和最佳原创剧本奖。</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary" data-dismiss="modal">关闭</button>
+                </div>
+              </div><!-- .-content -->
+            </div><!-- .-dialog -->
+          </div><!-- .modal -->
         </div>
         <div class="col-sm-4">
           <h2>男主角</h2>
-          <img class="img-responsive" src="pic/actor.jpg" alt="迈克尔•基顿">
+          <button type="button" class="btn hidden-xs" data-toggle="modal" data-target="#actor">
+            <img class="img-responsive" src="pic/actor.jpg" alt="迈克尔•基顿">
+          </button>
+          <img class="img-responsive visible-xs-block" src="pic/actor.jpg" alt="迈克尔•基顿">
           <p>迈克尔•基顿</p>
           <p>Michael Keaton</p>
+           <!-- Modal -->
+          <div class="modal fade" id="actor" tabindex="-1" role="dialog" aria-labelledby="actor-intro">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4>迈克尔·基顿（Michael Keaton）<button type="button" class="close" data-dismiss="modal" aria-label="关闭"><span aria-hidden="true">&times;</span></button></h4>
+                </div>
+                <div class="modal-body">
+                  <p>1951年出生于美国宾夕法尼亚，美国影视演员。</p>
+                  <p>1982年，他获得走上银幕的机会，参加影片《夜班》的演出，之后福克斯公司接连请他拍了四部戏。</p>
+                  <p>1989年的《蝙蝠侠》是基顿演艺生涯的一大转机，拓展了戏路，但他只演了两集便请辞其后星运转趋平淡。</p>
+                  <p>2008年，迈克尔·基顿加盟《玩具总动员3》配音队伍。</p>
+                  <p>2014年，他出演了《机械战警》和《极品飞车》两部影片。</p>
+                  <p>2014年11月，他获得了第18届好莱坞电影奖事业成就奖。</p>
+                  <p>2015年1月15日获第87届奥斯卡金像奖最佳男主角提名；同年3月5日，凭借《鸟人》获第41届美国科幻恐怖电影奖土星奖最佳男主角提名。</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary" data-dismiss="modal">关闭</button>
+                </div>
+              </div><!-- .-content -->
+            </div><!-- .-dialog -->
+          </div><!-- .modal -->
         </div>
         <div class="col-sm-4">
           <h2>女主角</h2>
-          <img class="img-responsive" src="pic/actress.jpg" alt="瑞秋•麦克亚当斯">
+          <button type="button" class="btn hidden-xs" data-toggle="modal" data-target="#actress">
+            <img class="img-responsive" src="pic/actress.jpg" alt="瑞秋•麦克亚当斯">
+          </button>
+          <img class="img-responsive visible-xs-block" src="pic/actress.jpg" alt="瑞秋•麦克亚当斯">
           <p>瑞秋•麦克亚当斯</p>
           <p>Rachel McAdams</p>
+          <!-- Modal -->
+          <div class="modal fade" id="actress" tabindex="-1" role="dialog" aria-labelledby="actress-intro">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4>瑞秋·麦克亚当斯（Rachel McAdams）<button type="button" class="close" data-dismiss="modal" aria-label="关闭"><span aria-hidden="true">&times;</span></button></h4>
+                </div>
+                <div class="modal-body">
+                  <p>1978年出生于加拿大安大略省，加拿大女演员。</p>
+                  <p>2004年，瑞秋·麦克亚当斯分别在《贱女孩》和《恋恋笔记本》中担任主演，并获得多个电影奖项和提名。</p>
+                  <p>2006年，瑞秋·麦克亚当斯获得第59届英国电影学院奖最佳新星奖提名。</p>
+                  <p>2009年，瑞秋·麦克亚当斯参演《大侦探福尔摩斯》和《时间旅行者的妻子》。</p>
+                  <p>2011年，瑞秋·麦克亚当斯出演《午夜巴黎》和《大侦探福尔摩斯2》。</p>
+                  <p>2013年，瑞秋·麦克亚当斯出演的《时空恋旅人》上映。</p>
+                  <p>2014年9月，瑞秋·麦克亚当斯确定在《真探第二季》担任女主角。</p>
+                  <p>2015年，她出演的电影《聚焦》上映。凭其中的表演获奥斯卡最佳女配角提名以及美国演员工会奖最佳女配角、最佳群戏两个奖项提名。</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary" data-dismiss="modal">关闭</button>
+                </div>
+              </div><!-- .-content -->
+            </div><!-- .-dialog -->
+          </div><!-- .modal -->
         </div>
       </fieldset>
     </div><!-- #actor-intro -->
-    <div class="row">
-      <h2 id="影片概览">影片概览：</h2>
-      <p>《聚焦》是由托马斯•麦卡锡执导的剧情片，由迈克尔•基顿、马克•鲁法洛、瑞秋•麦克亚当斯、斯坦利•图齐联合主演。影片于2015年11月6日在美国上映。 该片根据《波士顿环球报》中一篇新闻改编，以美国神职人员奸污和猥亵儿童的丑闻为背景，讲述了几位记者为了找出事实真相历经艰难的过程。 该片于2016年2月在第88届奥斯卡金像奖获得最佳影片奖和最佳原创剧本奖。</p>
-      <h2 id="剧情介绍">剧情介绍：</h2>
-      <p>罗比（迈克尔•基顿饰）是聚焦栏目的编辑，聚焦是波士顿环球报的一个专栏，拥有一个独立的调查小组，组员包括萨查•佩弗（瑞秋•麦克亚当斯饰），麦克•雷泽恩德斯（马克•鲁法洛饰），Matt Carroll（Brian D'Arcy James饰）。当马蒂•巴龙（列维•施瑞博尔饰）接替了环球报的总编辑一职，他开始指派罗比和他的团队，紧跟一桩被雪藏已久的案件，一个天主教牧师性骚扰教区里的孩子。虽然最开始他们以为这只是个小任务，但很快他们就发现，其背后还隐藏一系列事件，涉及了上百名受害者，而教会已经私下赔偿了受害者，并派人掩盖了这些罪行。随着调查的越发深入，他们发现了这一阴谋的更多证据，不仅仅是神职人员，就在波士顿以外，甚至全世界，都在上演着这种暴行，罗比和他的团队遭遇到了当地官员们的掣肘。教会内的，教会外的势力都在向他们施压，想让他们放弃这个案件，由此也充分体现了权力滥用的恶性循环。</p>
-      <h2 id="本片看点">本片看点：</h2>
-      <p>《聚焦》给观众的感觉，就像记者调查线索，机灵的脑子不可缺，但行事得按部就班。复杂的司法程序，烦人也得遵守，狡猾的辩方律师，难缠也得软磨，成堆的调遣目录，导演选择把主动权交给了叙事，使得全片有了一种莫名的程式感。剧情片拍摄的像纪录片，不会造成尿点频繁，是因为故事本身很劲爆。该片不是那种浮华，夸夸其谈的片子。片中的记者们也是这样，他们是能把脑袋扎进水中去干实事的人。该片自信、精巧、令观众满足。该片对于报纸揭露虐童丑闻事件的表现是司法鉴定般的，有些场景仅仅是迈克尔•基顿和马克•鲁法洛在简陋的办公室里挠他们三天没刮的胡茬，这正是该种电影中应该有的，影片找到了一种丰富、吸引人却又平实的方式来刻画记者的基础工作，通过档案柜和复印机传达出这样的触感。</p>
-      <h2 id="精彩影评">精彩影评：</h2>
-      <ol>
-        <li>导演汤姆•麦卡锡将“伟业”做了减法，这是一部没有主演的影片，故事才是真正的主角。这是一部没有炫技的影片，剔除繁杂的拍摄技巧，配乐也基本只有钢琴曲，就连该类型常有的激烈戏剧冲突，也少之又少。</li>
-        <li>首先是感受到事在人为，有时候每个人都看到黑暗，却又都害怕自己生活被势力威胁，默契的睁眼闭眼。社会被黑暗笼罩，更需要一个不怕牺牲敢于揭露的点灯人，照亮人们的良知，跟从正义。有时候不是看不见，不是没良心，只是缺勇气，顾忌自身。</li>
-      </ol>
-      <h2 id="参考资料">参考资料：</h2>
-      <p>百度百科： <a href="http://baike.baidu.com/subview/331325/16835528.htm" class="uri">http://baike.baidu.com/subview/331325/16835528.htm</a></p>
-    </div>
+    <div id="film-intro" class="row">
+      <div class="col-xs-12">
+	    <fieldset><legend>影评</legend></fieldset>
+		<h2><strong>没有敏感，只有直白的现实</strong></h2>
+		<p>《聚焦》是由托马斯·麦卡锡执导的剧情片，由迈克尔·基顿、马克·鲁法洛、瑞秋·麦克亚当斯、斯坦利·图齐联合主演。影片于2015年11月6日在美国上映。该片根据《波士顿环球报》中一篇新闻改编，以美国神职人员奸污和猥亵儿童的丑闻为背景，讲述了几位记者为了找出事实真相历经艰难的过程。该片于2016年2月在第88届奥斯卡金像奖获得最佳影片奖和最佳原创剧本奖。</p>
+		<p>» » »</p>
+		<p>这部电影剧本并非虚构，而是根据现实中的《波士顿环球报》花费一年的时间揭露牧师性侵儿童丑闻报道，用“四平八稳”的镜头还原调查部“聚焦”报道的整个过程，该系列报道因为引发的关注度和影响力极大而获得新闻界的“王冠”——普利策奖，这是对记者团队的最高褒奖。</p>
+		<p>该片以美国神职人员奸污和猥亵儿童的丑闻为背景，讲述了几位记者为了找出事实真相历经艰难的过程。罗比（迈克尔·基顿饰）是聚焦栏目的编辑，聚焦是波士顿环球报的一个专栏，拥有一个独立的调查小组，组员包括萨查·佩弗（瑞秋·麦克亚当斯饰），麦克·雷泽恩德斯（马克·鲁法洛饰），Matt Carroll（Brian D'Arcy James饰）。当马蒂·巴龙（列维·施瑞博尔饰）接替了环球报的总编辑一职，他开始指派罗比和他的团队，紧跟一桩被雪藏已久的案件，一个天主教牧师性骚扰教区里的孩子。虽然最开始他们以为这只是个小任务，但很快他们就发现，其背后还隐藏一系列事件，涉及了上百名受害者，而教会已经私下赔偿了受害者，并派人掩盖了这些罪行。随着调查的越发深入，他们发现了这一阴谋的更多证据，不仅仅是神职人员，就在波士顿以外，甚至全世界，都在上演着这种暴行，罗比和他的团队遭遇到了当地官员们的掣肘。教会内的，教会外的势力都在向他们施压，想让他们放弃这个案件，由此也充分体现了权力滥用的恶性循环。</p>
+		<p>» » »</p>
+		<p>《聚焦》给观众的感觉，就像记者调查线索，机灵的脑子不可缺，但行事得按部就班。复杂的司法程序，烦人也得遵守，狡猾的辩方律师，难缠也得软磨，成堆的调遣目录，导演选择把主动权交给了叙事，使得全片有了一种莫名的程式感。剧情片拍摄的像纪录片，不会造成尿点频繁，是因为故事本身很劲爆。该片不是那种浮华，夸夸其谈的片子。片中的记者们也是这样，他们是能把脑袋扎进水中去干实事的人。该片自信、精巧、令观众满足。该片对于报纸揭露虐童丑闻事件的表现是司法鉴定般的，有些场景仅仅是迈克尔·基顿和马克·鲁法洛在简陋的办公室里挠他们三天没刮的胡茬，这正是该种电影中应该有的，影片找到了一种丰富、吸引人却又平实的方式来刻画记者的基础工作，通过档案柜和复印机传达出这样的触感。</p>
+		<p>» » »</p>
+		<p>故事没有渲染记者英雄主义式和美国对民主的一向激烈宣扬，而是完全根据现实场景新闻编辑室里开始，追踪线索、采访、找到关键线索，约谈，寻找各方的证人，逼迫已经将势力渗透到法院的教会曾经掩盖和摆平的真相逐渐公之于众。</p>
+		<p>影片中四位调查记者组成的团队，各自分工，调查这个被尘封多年的案件。翻阅资料，找线人，受害者组织，法院文档、律师，这些知情者的沉默一点点被剥开。情绪内敛着、克制着，一点点的渗透，受害人打开记忆的匣口，回忆少年时代被性侵的经历，泣不成声，这种镜头也是一晃而过，没有停留太久。所有的情绪都有记者和受害人的对话展开。只有一次是发生了冲突，是来自记者之间，其中一个记者发觉到新闻后想立即见报但被编辑制止后的爆发的情感，这是唯一的一次强烈的情感冲突；其他的都在两人简单而沉默的对白中散发出来。当然也有记者的智慧，当面对一个个老奸巨猾的知情者的时候，组长罗比“我们准备了两则报道，一个关于牧师猥亵儿童的故事，一个关于律师如何协助教会包庇神职人员的故事，你选哪个”，老谋深算地攻下了教会辩护律师的城池。</p>
+		<p>它的意义不只在于纸媒日显衰落的大环境下，剧中的《波士顿环球报》的几个记者的推动的波士顿政治运作体系的改革，而且还在于新闻的荣光本身，不是花哨，而是沉淀的专业主义。这引起了国内同行对媒体自身的反思：在纸媒寒冬的年代，《聚焦》的出现带有某种悲壮的色彩，它如实刻画的新闻操守与执行典范，仿佛昨日还是大学热聊的理想，如今已成为对黄金岁月的致敬和缅怀。</p>
+		<p>参考资料：</p>
+		<p>百度百科： <a href="http://baike.baidu.com/subview/331325/16835528.htm" target="_blank" class="uri">聚焦（2015年托马斯·麦卡锡执导美国电影）_百度百科</a></p>
+	  </div><!-- .col-xs-12 -->
+    </div><!-- .row -->
   </main>
 </div>
 <div id="forFooter">
@@ -113,5 +193,6 @@
 <script src="../../js/jquery.min.js"></script> 
 <!-- Include all compiled plugins (below), or include individual files as needed --> 
 <script src="../../js/bootstrap.min.js"></script> 
+<script src="../../js/navtrans.js"></script>
 </body>
 </html>

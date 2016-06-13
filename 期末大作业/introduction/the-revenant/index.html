@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 <title>《荒野猎人》</title>
 <link href="../../css/bootstrap.min.css" rel="stylesheet">
 <link href="../../css/general.css" rel="stylesheet">
@@ -12,7 +12,7 @@
 
 <body>
 <div id="forNav" class="container-fluid">
-  <nav class="navbar navbar-default navbar-fixed-top">
+  <nav class="navbar navbar-default navbar-fixed-top navbar-transparent">
     <div class="container">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar" aria-expanded="false">
@@ -46,9 +46,9 @@
   </nav>
 </div>
 <div id="forHeader" class="container-fluid">
-  <div class="row">
+  <div class="row header">
     <header class="img-holder">
-      <picture class="">
+      <picture>
         <source media="(min-width: 1200px)" srcset="pic/large.jpg">
         <source media="(min-width: 768px)" srcset="pic/middle.jpg">
         <img src="pic/small.jpg" alt="poster">
@@ -56,7 +56,7 @@
       <div class="img-content img-content-left">
         <h1>《荒野猎人》</h1>
         <p class="lead">豆瓣评分 7.9/10</p>
-        <a class="btn btn-danger btn-lg" href="#" role="button">观看预告片</a>
+        <a class="btn btn-danger btn-lg" href="http://v.youku.com/v_show/id_XMTU0NDE4ODM2NA==.html?from=s1.8-1-1.2" target="_blank" role="button">观看预告片</a>
       </div>
     </header>
   </div><!-- .row -->
@@ -68,44 +68,127 @@
         <legend>演职员介绍</legend>
         <div class="col-sm-4">
           <h2>导演</h2>
-          <img class="img-responsive" src="pic/director.jpg" alt="亚利桑德罗·冈萨雷斯·伊纳里多">
+          <button type="button" class="btn hidden-xs" data-toggle="modal" data-target="#director">
+            <img class="img-responsive" src="pic/director.jpg" alt="亚利桑德罗·冈萨雷斯·伊纳里多">
+          </button>
+          <img class="img-responsive visible-xs-block" src="pic/director.jpg" alt="亚利桑德罗·冈萨雷斯·伊纳里多">
           <p>亚利桑德罗·冈萨雷斯·伊纳里多</p>
           <p>Alejandro González Iñárrituu</p>
+          <!-- Modal -->
+          <div class="modal fade" id="director" tabindex="-1" role="dialog" aria-labelledby="director intro">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4>亚利桑德罗·冈萨雷斯·伊纳里多（Alejandro González Iñárritu）<button type="button" class="close" data-dismiss="modal" aria-label="关闭"><span aria-hidden="true">&times;</span></button></h4>
+                </div>
+                <div class="modal-body">
+                  <p>1963年生于墨西哥城，墨西哥导演、编剧、剪辑师、制作人。</p>
+                  <p>2001年，执导处女作——剧情片《爱情是狗娘》。</p>
+                  <p>2002年，与11位导演共同拍摄纪录片《九一一事件簿》，获得第59届威尼斯国际电影节联合国教科文组织奖。</p>
+                  <p>2006年，执导剧情片《通天塔》，获得第60届英国电影学院奖电影奖-大卫·林恩导演奖提名。</p>
+                  <p>2010年，凭借动作片《美错》获得第63届戛纳国际电影节主竞赛单元-金棕榈奖提名。</p>
+                  <p>2015年，凭借喜剧片《鸟人》 获得第87届奥斯卡金像奖最佳导演奖和第41届美国科幻恐怖电影奖土星奖最佳导演奖。</p>
+                  <p>2016年1月11日，凭借冒险惊悚片《荒野猎人》获得第73届美国电影电视金球奖最佳导演奖和第88届奥斯卡金像奖最佳导演奖。</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary" data-dismiss="modal">关闭</button>
+                </div>
+              </div><!-- .-content -->
+            </div><!-- .-dialog -->
+          </div><!-- .modal -->
         </div>
         <div class="col-sm-4">
           <h2>男主角</h2>
-          <img class="img-responsive" src="pic/leading.jpg" alt="莱昂纳多•迪卡普里奥">
+          <button type="button" class="btn hidden-xs" data-toggle="modal" data-target="#leading">
+            <img class="img-responsive" src="pic/leading.jpg" alt="莱昂纳多•迪卡普里奥">
+          </button>
+          <img class="img-responsive visible-xs-block" src="pic/leading.jpg" alt="莱昂纳多•迪卡普里奥">
           <p>莱昂纳多•迪卡普里奥</p>
           <p>Leonardo DiCaprio</p>
+          <!-- Modal -->
+          <div class="modal fade" id="leading" tabindex="-1" role="dialog" aria-labelledby="leading-intro">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4>莱昂纳多·迪卡普里奥（Leonardo DiCaprio）<button type="button" class="close" data-dismiss="modal" aria-label="关闭"><span aria-hidden="true">&times;</span></button></h4>
+                </div>
+                <div class="modal-body">
+                  <p>1974年出生于美国洛杉矶，美国影视演员、制作人。</p>
+                  <p>1990年，16岁的他参加了电视剧《成长的烦恼》的拍摄。</p>
+                  <p>1993年，他凭借《不一样的天空》中的表演获得了第66届奥斯卡金像奖最佳男配角奖和第51届美国电影电视金球奖最佳男配角的提名。</p>
+                  <p>1995年，拍摄电影《罗密欧与朱丽叶》，荣膺第47届柏林国际电影节最佳男主角。</p>
+                  <p>1997年，莱昂纳多主演了《泰坦尼克号》。</p>
+                  <p>2002年，莱昂纳多出演了史蒂文斯皮尔伯格导演的《逍遥法外》，并因此获得了金球奖男主角的提名。</p>
+                  <p>2004年，和马丁西科塞斯合作的《飞行家》为莱昂迎来一个美国金球奖最佳男演员奖。</p>
+                  <p>2006年，凭借《无间道风云》和《血钻》获得金球奖最佳男主角的双提名。</p>
+                  <p>2010年，他出演了《盗梦空间》。</p>
+                  <p>2013年，他主演了电影《了不起的盖茨比》。</p>
+                  <p>2014年1月，他凭借《华尔街之狼》中的表演获得了金球奖最佳男主角奖。</p>
+                  <p>2016年，凭借电影《荒野猎人》获得第73届金球奖最佳男主角奖和第88届奥斯卡金像奖最佳男主角奖。</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary" data-dismiss="modal">关闭</button>
+                </div>
+              </div><!-- .-content -->
+            </div><!-- .-dialog -->
+          </div><!-- .modal -->
         </div>
         <div class="col-sm-4">
           <h2>男二号</h2>
-          <img class="img-responsive" src="pic/supporting.jpg" alt="汤姆•哈迪">
+          <button type="button" class="btn hidden-xs" data-toggle="modal" data-target="#supporting">
+            <img class="img-responsive" src="pic/supporting.jpg" alt="汤姆•哈迪">
+          </button>
+          <img class="img-responsive visible-xs-block" src="pic/supporting.jpg" alt="汤姆•哈迪">
           <p>汤姆•哈迪</p>
           <p>Tom Hardy</p>
+          <!-- Modal -->
+          <div class="modal fade" id="supporting" tabindex="-1" role="dialog" aria-labelledby="supporting-intro">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4>汤姆·哈迪（Tom Hardy）<button type="button" class="close" data-dismiss="modal" aria-label="关闭"><span aria-hidden="true">&times;</span></button></h4>
+                </div>
+                <div class="modal-body">
+                  <p>1977年出生于英国伦敦，英国影视演员。</p>
+                  <p>2001年，他的出道片《兄弟连》开播。</p>
+                  <p>2002年，他在《星际迷航：复仇女神》中饰演反派。</p>
+                  <p>2008年，他凭借《斯图尔特：倒带人生》被英国影视艺术学院奖提名最佳男演员。</p>
+                  <p>2009年，汤姆·哈迪凭借在《布朗森》中的表演而获得英国独立电影奖最佳男主角奖。</p>
+                  <p>2010年，汤姆饰演了《盗梦空间》中的Eames。</p>
+                  <p>2012年，汤姆出演的《蝙蝠侠：黑暗骑士崛起》上映，他在片中饰演贝恩一角。</p>
+                  <p>2015年12月，凭借《传奇》获得第18届英国独立电影奖最佳男主角奖。</p>
+                  <p>2016年凭借《荒野猎人》提名奥斯卡最佳男配角奖。</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary" data-dismiss="modal">关闭</button>
+                </div>
+              </div><!-- .-content -->
+            </div><!-- .-dialog -->
+          </div><!-- .modal -->
         </div>
       </fieldset>
     </div><!-- #actor-intro -->
     <div id="film-intro" class="row">
-      <h2 id="影片概览">影片概览：</h2>
-      <p>《荒野猎人》是2015年亚利桑德罗•冈萨雷斯•伊纳里多执导的剧情电影，由莱昂纳多•迪卡普里奥、汤姆•哈迪、威尔•保尔特 、多姆纳尔•格利森、保罗•安德森等主演。 该片根据迈克尔•彭克同名长篇小说改编，故事讲述了19世纪一名皮草猎人被熊所伤并被其他猎人抢走财物抛弃荒野，猎人经历痛苦奇迹存活后开始复仇的故事。 该片在2016年1月获得第73届金球奖剧情类最佳电影奖、最佳男主角奖和最佳导演奖。并在2016年2月，第88届奥斯卡金像奖上，该片同时获得最佳导演、最佳男主角和最佳摄影奖。</p>
-      <h2 id="剧情介绍">剧情介绍：</h2>
-      <p>休•格拉斯（莱昂纳多•迪卡普里奥饰）是一名皮草猎人，在一次打猎途中被一头熊殴打成重伤后被同行的乘船船长安德鲁•亨利（多姆纳尔•格利森饰）救下，船长雇佣了两个人约翰•菲茨杰拉德（汤姆•哈迪饰）和吉姆•布里杰（威尔•保尔特饰）来照顾他。约翰•菲茨杰拉德根本无心照顾格拉斯，一心只想着将格拉斯的财产占为己有，于是残忍的杀害了格拉斯的儿子，并说服吉姆•布里杰将格拉斯抛弃在荒野等死。两人原以为格拉斯就会这样离世，但格拉斯凭借坚强的毅力在野性的蛮荒之地穿行了好几个月，终于回到了安全地带并开始了复仇计划。</p>
-      <h2 id="本片看点">本片看点：</h2>
-      <p>该片最大的看点就是其主演莱昂纳多•迪卡普里奥，小李子凭借在片中完美的表现终于获得第88届奥斯卡最佳男主角奖。该奖对于小李子来说可谓来之不易，从1990年16岁步入影坛以来，他饰演了多部经典作品，并曾四次被提名奥斯卡最佳男演员。最终才在今年的《荒野猎人》中获奖，对于刚要满40岁的迪卡普里奥先生来说，可谓来之不易。</p>
-      <h2 id="精彩影评">精彩影评：</h2>
-      <ol>
-        <li>小李陪跑好拼，先是被母熊强暴加强吻，然后目睹汤老湿干掉自己的儿子，为了复仇，生吞鸟鱼牛，玩冰河漂流，熏烤疗伤、避雪马尸，坠崖又偷马，先干法国人，再干波尼人，顺带解救被拐妇女，最后一场血战，终于正面刚了汤老湿。结尾一脸苦逼样，仿佛在对屏幕前的小金人说：受了这么多罪，这次该我了吧。</li>
-        <li>极简的复仇故事，在伊纳里图超神的调度、卢贝斯基绝美的摄影、小李拼了老命的表演相结合之下，带来了年度最震撼的视听感受。</li>
-        <li>一部整个剧组都很遭罪的电影，恶劣的自然环境才是这部电影的主角，全程自然光的摄影和偏慢的叙事节奏也在极力的放大环境，西部片式的蛮荒复仇逻辑让复仇本身变得简单粗暴，十序列的剧作不急不慢的下来，并没有让人惊艳的部分，类型片化的剪辑节奏都是意料之中。</li>
-      </ol>
-      <h2 id="参考资料">参考资料：</h2>
-      <ul>
-        <li>豆瓣电影： <a href="https://movie.douban.com/subject/5327268/?source=new_aladdin" class="uri">https://movie.douban.com/subject/5327268/?source=new_aladdin</a></li>
-        <li>百度百科： <a href="http://baike.baidu.com/view/68697.htm?fromtitle=%E5%B0%8F%E6%9D%8E%E5%AD%90&amp;fromid=19424186&amp;type=syn">http://baike.baidu.com/view/68697.htm?fromtitle=%E5%B0%8F%E6%9D%8E%E5%AD%90&amp;fromid=19424186&amp;type=syn</a></li>
-      </ul>
-    </div>
-    <div class="row">8.选择理由</div>
+      <div class="col-xs-12">
+	    <fieldset><legend>影评</legend></fieldset>
+        <h2><strong>复仇与生存</strong></h2>
+		<p>《荒野猎人》是2015年亚利桑德罗·冈萨雷斯·伊纳里多执导的剧情电影，由莱昂纳多·迪卡普里奥、汤姆·哈迪、威尔·保尔特 、多姆纳尔·格利森、保罗·安德森等主演。该片根据迈克尔·彭克同名长篇小说改编，故事讲述了19世纪一名皮草猎人被熊所伤并被其他猎人抢走财物抛弃荒野，猎人经历痛苦奇迹存活后开始复仇的故事。该片在2016年1月获得第73届金球奖剧情类最佳电影奖、最佳男主角奖和最佳导演奖。并在2016年2月，第88届奥斯卡金像奖上，该片同时获得最佳导演、最佳男主角和最佳摄影奖。</p>
+		<p>» » »</p>
+		<p>影片讲述了一名皮草猎人休·格拉斯（莱昂纳多·迪卡普里奥饰），在一次打猎途中被一头熊殴打成重伤后，被同行的乘船船长安德鲁·亨利（多姆纳尔·格利森饰）救下，船长雇佣了两个人约翰·菲茨杰拉德（汤姆·哈迪饰）和吉姆·布里杰（威尔·保尔特饰）来照顾他。约翰·菲茨杰拉德根本无心照顾格拉斯，一心只想着将格拉斯的财产占为己有，于是残忍的杀害了格拉斯的儿子，并说服吉姆·布里杰将格拉斯抛弃在荒野等死。两人原以为格拉斯就会这样离世，但格拉斯凭借坚强的毅力在野性的蛮荒之地穿行了好几个月，终于回到了安全地带并开始了复仇计划。</p>
+		<p>在电影所有的线索和矛盾中也一直贯穿着两个主题，复仇与生存。在电影的开头，我们可以看到格拉斯一家三口在一起的画面，伴随着女人的旁白：“As long as you can still grab a breath ,you fight.keep breathing”这句旁白贯穿全片，在每次格拉斯接近死亡时这句旁白都会响起，呼唤着他，请努力活着。</p>
+		<p>在被菲茨杰拉德抛弃之后，身负重伤的格拉斯爬出坟墓，由于喉咙被母熊划破，导致他喝水都喝不了，为了粘合伤口他往伤口撒火药，然后点燃。为了生存直接生吃活鱼和动物的残肉和内脏。为了避免被追来的里族人发现他在激流中求生。摔下悬崖后刨空身边被摔死的马的内脏，然后裸体躲进肚子里取暖。就像这样死过几次之后，他活了过来，并最终在一场战斗后成功复仇。</p>
+		<p>某种意义上，这句话同样也是说给里族人的。还记得那个救了格拉斯的波尼族男人，为了生存不得不前往更南的地方找那里的族人，可最后还是被路过的法国人吊死在树上。印第安人这个群体何尝不是如此，在他们短暂的历史中，他们一直都在为了生存而迁徙，为了生存而战斗，然而还是弱肉强食。</p>
+		<p>» » »</p>
+		<p>全片最大的看点就是其主演莱昂纳多·迪卡普里奥，小李子凭借在片中完美的表现终于获得第88届奥斯卡最佳男主角奖。该奖对于小李子来说可谓来之不易，从1990年16岁步入影坛以来，他饰演了多部经典作品，并曾四次被提名奥斯卡最佳男演员。最终才在今年的《荒野猎人》中获奖，对于刚要满40岁的迪卡普里奥先生来说，可谓来之不易。</p>
+		<p>对于该片，也有很多观众发出这样的赞叹：小李陪跑好拼，先是被母熊强暴加强吻，然后目睹汤老湿干掉自己的儿子，为了复仇，生吞鸟鱼牛，玩冰河漂流，熏烤疗伤、避雪马尸，坠崖又偷马，先干法国人，再干波尼人，顺带解救被拐妇女，最后一场血战，终于正面刚了汤老湿。结尾一脸苦逼样，仿佛在对屏幕前的小金人说：受了这么多罪，这次该我了吧。</p>
+		<p>» » »</p>
+		<p>除了充满回响和启示的主体，恶劣的自然环境也是这部电影的主角，全程自然光的摄影和偏慢的叙事节奏也在极力的放大环境，西部片式的蛮荒复仇逻辑让复仇本身变得简单粗暴，十序列的剧作不急不慢的下来，并没有让人惊艳的部分，类型片化的剪辑节奏都是意料之中。</p>
+		<p>这部电影中大量充斥着导演惯用的长镜头，把每个场面和细节都表现的触目惊心，鲜血与呻吟，残忍与死亡，广角镜头下，落基山脉的壮丽风光一览无遗，一个种族的命运正在上演……</p>
+		<p>参考资料：</p>
+		<p>豆瓣电影： <a href="https://movie.douban.com/subject/5327268/?source=new_aladdin" target="_blank" class="uri">荒野猎人 (豆瓣)</a></p>
+		<p>百度百科： <a href="http://baike.baidu.com/view/68697.htm?fromtitle=%E5%B0%8F%E6%9D%8E%E5%AD%90&amp;fromid=19424186&amp;type=syn" target="_blank">莱昂纳多·迪卡普里奥_百度百科</a></p>
+      </div><!-- .col-xm-12 -->
+    </div><!-- #film-intro -->
   </main>
 </div><!-- #forMain -->
 <div id="forFooter">
@@ -118,5 +201,6 @@
 <script src="../../js/jquery.min.js"></script> 
 <!-- Include all compiled plugins (below), or include individual files as needed --> 
 <script src="../../js/bootstrap.min.js"></script> 
+<script src="../../js/navtrans.js"></script>
 </body>
 </html>

@@ -1,11 +1,56 @@
+/* 导航箭头 */
+.img-holder > .navicon {
+	position: absolute;
+	left: 50%;
+	top: 90%;
+	width: 50px;
+	height: 50px;
+	transform: translate(-50%,-50%);
+	-webkit-transform: translate(-50%,-50%);
+	-moz-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	font-size: 35px;
+	color: green;
+	border: 4px solid green;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 1.7;
+}
+
+/* 封面 */
+.visible-xs-block {
+	overflow: hidden;
+	background-color: black;
+	text-align: center;
+	color: white;
+}
+
+.visible-xs-block img {
+	height: 100vh;
+	width: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+@media (min-width: 769px) {
+	.poster {
+		max-height: 100vh;
+		overflow: hidden;
+	}
+}
+
 /* 正文 */
 #forMain {
 	margin-bottom: 20px;
 }
 
 div.row {
-	margin-bottom: 33vh;
-	//max-height: 1000px;
+	padding-bottom: 16.5vh;
+}
+
+div.row + .row {
+	padding-top: 16.5vh;
 }
 
 img {
@@ -13,26 +58,40 @@ img {
 }
 
 div.row:last-child {
+	padding-bottom: 0;
 	margin-bottom: 150px;
 }
 
 /* 影片介绍　*/
+#introduction .navicon {
+	top: 105%;
+}
+
 legend {
 	text-align: center;
 }
 
 .col-md-3 img {
-	max-height: 100vh;
+	max-height: 70vh;
 	width: auto;
 }
 
-.col-md-3 a {
-	opacity: 0.6;
-}
+/* 鼠标悬停动画效果 */
+@media (min-width: 769px) {
+	.col-md-3 a {
+		opacity: 0.6;
+		transition: opacity 0.2s ease-in;
+	}
 
-.col-md-3 a:hover,
-.col-md-3 a:active {
-	opacity: 1;
+	.col-md-3 a:hover,
+	.col-md-3 a:focus,
+	.col-md-3 a:active {
+		opacity: 1;
+		transition: opacity 0.2s ease-out;
+		-webkit-transition: opacity 0.2s ease-out;
+		-moz-transition: opacity 0.2s ease-out;
+		-o-transition: opacity 0.2s ease-out;
+	}
 }
 
 /* img-holder-content */
@@ -40,8 +99,37 @@ legend {
 	position: relative;
 }
 
-.img-holder a {
+.img-holder > a {
 	position: absolute;
-	left: 75vw;
-	bottom: 45%;
+	left: 50vw;
+	top: 83%;
+	transform: translate(-50%,-50%);
+	-webkit-transform: translate(-50%,-50%);
+	-moz-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
 }
+
+@media (min-width: 769px) {
+	.img-holder > a {
+		left: 75vw;
+		top: 50%;
+	}
+}
+
+.img-holder > .btn {
+	color: white;
+  	background-color: black;
+	border-color: white;
+	font-size: 1em;
+	font-weight: bold;	
+}
+
+.img-holder > .btn:hover,
+.img-holder > .btn:focus,
+.img-holder > .btn:active {
+	color: black;
+	background-color: white;
+	border-color: white;
+}
+	
