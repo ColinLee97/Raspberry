@@ -19,14 +19,14 @@
 }
 
 /* 封面 */
-.visible-xs-block {
+.header .visible-xs-block {
 	overflow: hidden;
 	background-color: black;
 	text-align: center;
 	color: white;
 }
 
-.visible-xs-block img {
+.header .visible-xs-block img {
 	height: 100vh;
 	width: auto;
 	margin-left: auto;
@@ -34,7 +34,7 @@
 }
 
 @media (min-width: 769px) {
-	.poster {
+	.header .hidden-xs {
 		max-height: 100vh;
 		overflow: hidden;
 	}

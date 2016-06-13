@@ -48,11 +48,9 @@
 <div id="forHeader" class="container-fluid">
   <div class="row header">
     <header class="img-holder">
-      <picture>
-        <source media="(min-width: 1200px)" srcset="pic/large.jpg">
-        <source media="(min-width: 768px)" srcset="pic/middle.jpg">
-        <img src="pic/small.jpg" alt="poster">
-      </picture>
+      <img class="visible-lg-block" src="pic/large.jpg" alt="poster">
+      <img class="visible-sm-block visible-md-block" src="pic/middle.jpg" alt="poster">
+      <img class="visible-xs-block" src="pic/small.jpg" alt="poster">
       <div class="img-content img-content-middle">
         <h1>《聚焦》</h1>
         <p class="lead">豆瓣评分 7.8/10</p>

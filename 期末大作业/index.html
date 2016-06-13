@@ -53,21 +53,14 @@
         <h1>第88届奥斯卡金像奖</h1>
       </div>
       <div class="img-holder hidden-xs">
-        <div class="poster">
-          <picture>
-            <source srcset="pic/main.jpg" media="(min-width: 769px)">
-            <img class="img-responsive" src="pic/main-mobile-first.jpg" alt="oscar">
-          </picture>
-        </div>
-      <a class="navicon hidden-xs hidden-sm inPage" href="#nominators" role="button" minus="0"><span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a>
+        <img class="img-responsive" src="pic/main.jpg" alt="oscar">
+        <a class="navicon hidden-xs hidden-sm inPage" href="#nominators" role="button" minus="0"><span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a>
       </div><!-- .img-holder -->
     </div><!-- .row -->
     <div class="row" id="nominators">
       <div class="img-holder">
-        <picture>
-          <source srcset="pic/nominators.jpg" media="(min-width: 769px)">
-          <img class="img-responsive" src="pic/nominators-mobile.jpg" alt="nominators">
-        </picture>
+        <img class="img-responsive visible-xs-block" src="pic/nominators-mobile.jpg" alt="nominators">
+		<img class="img-responsive hidden-xs" src="pic/nominators.jpg" alt="nominators">
         <a class="btn btn-primary btn-lg" href="Prize_Winner.html">查看完整提名名单 »</a>
         <a class="navicon hidden-xs hidden-sm inPage" href="#introduction" role="button" minus="0"><span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a>
       </div><!-- .img-holder -->
@@ -85,10 +78,8 @@
     </div>
     <div class="row" id="media">
       <div class="img-holder">
-        <picture>
-          <source srcset="pic/media.jpg" media="(min-width: 769px)">
-          <img class="img-responsive" src="pic/media-mobile.jpg" alt="media">
-        </picture>
+	    <img class="img-responsive visible-xs-block" src="pic/media-mobile.jpg" alt="media">
+	    <img class="img-responsive hidden-xs" src="pic/media.jpg" alt="media">        
         <a class="btn btn-primary btn-lg" href="Media.html">查看多媒体展厅 »</a>
       </div><!-- .img-holder -->
     </div><!-- .row -->

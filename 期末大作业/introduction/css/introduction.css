@@ -1,5 +1,5 @@
 /* 封面 */
-header picture img {
+.header .img-holder img {
 	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
