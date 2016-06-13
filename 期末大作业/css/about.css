@@ -7,10 +7,16 @@ body {
 	margin-bottom: 20px;
 }
 
-div.row {
-	margin-bottom: 20px;
-	height: 1500px;
-	background-color:#14C8D7;
+fieldset ~ fieldset {
+	margin-top: 5vh;
+}
+
+legend, h4 {
+	font-weight: bold;
+}
+
+h4 {
+	margin: 20px 0;
 }
 
 /* affix */
