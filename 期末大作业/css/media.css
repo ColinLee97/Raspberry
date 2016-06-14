@@ -18,6 +18,7 @@ div.row + .row {
 /* fieldset */
 legend {
 	text-align: center;
+	border-bottom-color: #b7a261;
 }
 
 /* Carousel */

@@ -15,6 +15,10 @@ legend, h4 {
 	font-weight: bold;
 }
 
+legend {
+	border-bottom-color: #5e477c;
+}
+
 h4 {
 	margin: 20px 0;
 }

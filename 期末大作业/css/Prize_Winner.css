@@ -23,7 +23,16 @@ main ul {
 }
 
 main {
-	background-color: #f0f0f0;
+	background-color: #fafafa;
+}
+
+h3 {
+	color: #b7a261;
+	font-weight: bold;
+}
+
+strong {
+	color: #5e477c;
 }
 
 /* affix */
@@ -43,7 +52,7 @@ aside ul li {
 }
 
 aside ul li.active {
-	border-left: 2px solid #FF0000;
+	border-left: 2px solid #b7a261;
 }
 
 aside a {
@@ -52,10 +61,15 @@ aside a {
 	padding-bottom: 0 !important;
 }
 
+.nav > li > a:focus {
+	background-color: transparent;
+}
+
 aside li.active a {
-	color: #ff0000;
+	color: #b7a261;
 	padding-left: 13px !important;
 }
+
 
 aside ul.return-to-top {
 	padding-left: 15px;

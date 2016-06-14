@@ -1,6 +1,28 @@
+/* body {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);
+
+  -webkit-filter: grayscale(1);
+
+  filter: grayscale(1);
+} */
+
+body {
+	color: #454440;
+}
+
 /* 导航栏 */
 .navbar-default {
-	background-color: rgba(248,248,248,1);
+	background-color: #fafafa;
+}
+
+.navbar-default .navbar-nav > li > a {
+	color: #454440;
+	font-weight: bold;
+}
+
+.navbar-default .navbar-right > li > a,
+.navbar-default .navbar-right > li > a:hover {
+	color: #5e477c;
 }
 
 /** 当前状态指示条 **/
@@ -19,13 +41,21 @@
 .navbar-nav > .open > a,
 .navbar-nav > .open > a:hover,
 .navbar-nav > .open > a:focus {
-	border-left: 3px solid #805500;
+	border-left: 3px solid #e2dac0;
 	padding-left: 12px;
 }
 
 .navbar-default .navbar-nav > .active > a {
 	border-left: 3px solid #b7a261;
 	padding-left: 12px;
+}
+
+.navbar-right > li > a:hover {
+	border-left: 3px solid #bfb5cb;
+}
+
+.navbar-default .navbar-right > .active > a {
+	border-left: 3px solid #5e477c;
 }
 
 /*** 针对非移动产品 ***/
@@ -45,11 +75,19 @@
 	.navbar-nav > .open > a,
 	.navbar-nav > .open > a:hover,
 	.navbar-nav > .open > a:focus {
-		border-bottom: 3px solid #805500;
+		border-bottom: 3px solid #e2dac0;
 	}
 	
 	.navbar-default .navbar-nav > .active > a {
 		border-bottom: 3px solid #b7a261;
+	}
+	
+	.navbar-right > li > a:hover {
+		border-bottom: 3px solid #bfb5cb;
+	}
+	
+	.navbar-default .navbar-right > .active > a {
+		border-bottom: 3px solid #5e477c;
 	}
 }
 
@@ -73,9 +111,14 @@ body {
 	}
 	
 	.navbar-transparent .navbar-nav > li > a,
+	.navbar-transparent .navbar-nav > li > a:hover,
+	.navbar-transparent .navbar-nav > li > a:focus,
 	.navbar-transparent .navbar-nav > .active > a,
+	.navbar-transparent .navbar-nav > .open > a,
+	.navbar-transparent .navbar-nav > .open > a:focus,
+	.navbar-transparent .navbar-nav > .open > a:active,
 	.navbar-transparent .navbar-brand {
-		color: white;
+		color: #fafafa;
 	}
 	/*** 动画效果 ***/
 	.navbar-default {
@@ -99,7 +142,7 @@ footer {
 	text-align: center;
 	height: 100px;
 	padding: 25px 50px;
-	background-color: #f8f8f8;
+	background-color: #fafafa;
 	border-top: 1px solid #e7e7e7;
 }
 

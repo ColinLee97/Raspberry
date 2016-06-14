@@ -15,12 +15,14 @@
 	margin-bottom: 5vh;
 }
 
+legend {
+	border-bottom-color: #b7a261;
+}
+
 /* 演员介绍 */
 #actor-intro .col-sm-4 {
 	padding: 20px;
-	border-left-width: 2px;
-	border-left-color: #FFFFFF;
-	border-left-style: solid;
+	padding-top: 0;
 	height: 100%;
 }
 
@@ -31,6 +33,15 @@
 #actor-intro img {
 	margin-left: auto;
 	margin-right: auto;
+}
+
+#actor-intro .col-sm-4 > p {
+	margin-bottom: 0;
+	margin-top: 10px;
+}
+
+#actor-intro button:hover {
+	border-color: #b7a261;
 }
 
 /* img-holder-content */
@@ -52,6 +63,7 @@
 		-moz-transform: translate(-50%,-50%);
 		-ms-transform: translate(-50%,-50%);
 		-o-transform: translate(-50%,-50%);
+		color: white;
 	}
 	
 	.img-content-left {
@@ -93,6 +105,7 @@
 legend,
 #film-intro h2 {
 	text-align: center;
+	font-weight: bold;
 }
 
 #film-intro p {
