@@ -46,26 +46,31 @@ aside ul li {
   list-style: none;
 }
 
-aside ul li.active {
+aside .nav > .active {
   border-left: 2px solid #b7a261;
 }
 
-aside a {
-  margin-bottom: 10px !important;
-  padding-top: 0 !important;
-  padding-bottom: 0 !important;
+aside .nav > li > a,
+aside .return-to-top > li > a {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: #454440;
 }
 
-.nav > li > a:focus {
+aside .nav li > a:hover,
+aside .nav li > a:focus {
   background-color: transparent;
+  color: #e2dac0;
+  border-left: 2px solid #e2dac0;
+  padding-left: 13px;
 }
 
-aside li.active a {
+aside .nav > .active > a {
   color: #b7a261;
-  padding-left: 13px !important;
+  padding-left: 13px;
 }
 
-aside .return-to-top {
+aside > .return-to-top {
   padding-left: 15px;
   margin-top: 10px;
 }

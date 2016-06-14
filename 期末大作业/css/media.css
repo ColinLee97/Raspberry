@@ -23,8 +23,8 @@ legend {
 
 /* Carousel */
 #myCarousel {
-  border: 0.5em solid #000;
-  background-color: #000;
+  border: 0.5em solid #fafafa;
+  background-color: #fafafa;
 }
 
 #myCarousel img {
@@ -33,4 +33,16 @@ legend {
   width: auto;
   margin-left: auto;
   margin-right: auto;
+}
+
+#myCarousel .carousel-control {
+  background-image: none;
+  color: #b7a261;
+}
+
+.carousel-indicators .active {
+  background-color: #fafafa;
+}
+.carousel-caption {
+  color: #fafafa;
 }

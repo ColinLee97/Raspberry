@@ -55,7 +55,7 @@
 	<p>所有的文字结构由<a href="http://pandoc.org/index.html">Pandoc</a>自动转换生成，包括现在的这份说明文档。</p>
 	<p>所有的文件都可以在<a href="https://github.com/ColinLee97/RaspBerry/tree/%E5%A4%A7%E4%B8%80%E4%B8%8B/%E6%9C%9F%E6%9C%AB%E5%A4%A7%E4%BD%9C%E4%B8%9A">我的Github</a>上看到（除了文字和图片原稿，因为实在太大），包括一些不是很详细的commit历史。</p>
 	<p>移动端可以访问<a href="http://lee.icesoft.cc/">服务器版网页</a>。Github里面没有后缀的是作业版，带了.min后缀的是服务器版。服务器版的文件删除了所有注释且不具备任何可读性，图片也是经过缩小的。除此之外没有任何本质区别。</p>
-	<p>所有的HTML与CSS均经过<a href="http://jigsaw.w3.org/css-validator/#validate-by-upload">w3.org</a>的检验，无语法错误。</p>
+	<p>所有的HTML、CSS与JS均经过lint与<a href="http://jigsaw.w3.org/css-validator/#validate-by-upload">w3.org</a>的检验，无语法错误。</p>
 	<fieldset><legend id="topic">选题</legend></fieldset>
 	<p>原本我们想要做的是今年普利策奖中美联社报道的，<a href="http://www.ap.org/explore/seafood-from-slaves/">东南亚奴役劳工事件</a>。</p>
 	<p>后来因为种种原因（主要是美联社自己已经做了一个很好看的专题网页，在构思网页设计的时候被先入为主了），我们重新选择了奥斯卡奖作为这次大作业的主题。</p>
@@ -83,31 +83,32 @@
   &lt;img class=&quot;visible-sm-block visible-md-block&quot; src=&quot;pic/middle.jpg&quot; alt=&quot;poster&quot;&gt;
   &lt;img class=&quot;visible-xs-block&quot; src=&quot;pic/small.jpg&quot; alt=&quot;poster&quot;&gt;
   &lt;div class=&quot;img-content img-content-left&quot;&gt;
-	&lt;h1&gt;《荒野猎人》&lt;/h1&gt;
-	&lt;p class=&quot;lead&quot;&gt;豆瓣评分 7.9/10&lt;/p&gt;
-	&lt;a class=&quot;btn btn-danger btn-lg&quot; href=&quot;http://v.youku.com/v_show/id_XMTU0NDE4ODM2NA==.html?from=s1.8-1-1.2&quot; target=&quot;_blank&quot; role=&quot;button&quot;&gt;观看预告片&lt;/a&gt;
+    &lt;h1&gt;《荒野猎人》&lt;/h1&gt;
+    &lt;p class=&quot;lead&quot;&gt;豆瓣评分 7.9/10&lt;/p&gt;
+    &lt;a class=&quot;btn btn-danger btn-lg&quot; href=&quot;http://v.youku.com/v_show/id_XMTU0NDE4ODM2NA==.html?from=s1.8-1-1.2&quot; target=&quot;_blank&quot; role=&quot;button&quot;&gt;观看预告片&lt;/a&gt;
   &lt;/div&gt;
 &lt;/header&gt;</code></pre>
 <pre><code>/* img-holder-content */
 .img-holder {
-	position: relative;
-}
-	
-.img-content {
-	text-align: center;
-	font-weight: bold;
+  position: relative;
 }
 
-@media (min-width: 768px) { 
-	.img-content {
-		position: absolute;
-		top: 45%;
-		transform: translate(-50%,-50%);
-	}
-	
-	.img-content-left {
-		left: 25vw;
-	}
+.img-content {
+  text-align: center;
+  font-weight: bold;
+}
+
+@media (min-width: 768px) {
+  .img-content {
+    position: absolute;
+    top: 45%;
+    transform: translate(-50%, -50%);
+    ...
+  }
+
+  .img-content-left {
+    left: 25vw;
+  }
 }</code></pre>
 <p>这个img-holder-content结构以及三张图片的hidden/visible属性（实质是响应式设计中的Art Direction问题）会在后面再介绍，重点是中间的media query部分。</p>
 <p>可以看到，默认情况下，按钮及说明文字本身除了居中和加粗以外就没有别的样式了，这也就是移动设备上看到的效果。</p>
@@ -138,18 +139,18 @@
 // N milliseconds. If `immediate` is passed, trigger the function on the
 // leading edge, instead of the trailing.
 function debounce(func, wait, immediate) {
-	var timeout;
-	return function() {
-		var context = this, args = arguments;
-		var later = function() {
-			timeout = null;
-			if (!immediate) func.apply(context, args);
-		};
-		var callNow = immediate &amp;&amp; !timeout;
-		clearTimeout(timeout);
-		timeout = setTimeout(later, wait);
-		if (callNow) func.apply(context, args);
-	};
+    var timeout;
+    return function() {
+        var context = this, args = arguments;
+        var later = function() {
+            timeout = null;
+            if (!immediate) func.apply(context, args);
+        };
+        var callNow = immediate &amp;&amp; !timeout;
+        clearTimeout(timeout);
+        timeout = setTimeout(later, wait);
+        if (callNow) func.apply(context, args);
+    };
 };
 
 //定义全局变量target
@@ -157,70 +158,73 @@ var target;
 
 //当网页加载或者拖拉窗口尺寸时，将封面海报的四分之三高度赋值给target
 $(window).on(&quot;load resize&quot;, function() {
-	target = $(&quot;.header&quot;).height()*3/4;
+    target = $(&quot;.header&quot;).height()*3/4;
 });
 
 //定义变更类的函数，用于绑定侦听器
 //加入debounce来限制最多每17毫秒执行一次函数，避免过分占用CPU
 var checkScroll = debounce(function() {
-	//判断页面位置是否大于窗口高度
-	if ($(window).scrollTop() &gt; target) {
-		//当结果为真，即滚到封面海报以下时，移除.navbar-transparent类
-		$(&quot;.navbar&quot;).removeClass(&quot;navbar-transparent&quot;);
-	} else {
-		//反之，则添加透明类
-		$(&quot;.navbar&quot;).addClass(&quot;navbar-transparent&quot;);
-	};
+
+    //判断页面位置是否大于窗口高度
+    if ($(window).scrollTop() &gt; target) {
+
+        //当结果为真，即滚到封面海报以下时，移除.navbar-transparent类
+        $(&quot;.navbar&quot;).removeClass(&quot;navbar-transparent&quot;);
+    } else {
+
+        //反之，则添加透明类
+        $(&quot;.navbar&quot;).addClass(&quot;navbar-transparent&quot;);
+    };
 },17);
 
 //将函数与窗口滚动绑定在一起
 $(window).on(&quot;scroll&quot;, checkScroll);</code></pre>
 <p>而渐变效果只在大屏幕上能显示，对移动设备无影响。（其实这一监测应该交由JS而不是CSS的media query来做，从提高效率的角度看）。动画效果会在后面提到。</p>
 <pre><code>@media (min-width: 768px) {
-	... 
-	.navbar-transparent {
-		background-color: transparent;
-		...
-	}
-	
-	/*** 动画效果 ***/
-	.navbar-default {
-		transition: background-color 0.3s ease;
-		-webkit-transition: background-color 0.3s ease;
-		-moz-transition: background-color 0.3s ease;
-		-o-transition: background-color 0.3s ease;
-	}
-	...
+  ...
+  .navbar-transparent .navbar-nav &gt; .active &gt; a {
+    background-color: transparent;
+    ....
+  }
+
+  /*** 动画效果 ***/
+  .navbar-default {
+    transition: background-color 0.3s ease;
+    -webkit-transition: background-color 0.3s ease;
+    -moz-transition: background-color 0.3s ease;
+    -o-transition: background-color 0.3s ease;
+  }
+  ...
 }</code></pre>
 	<fieldset><legend id="img-holder-content">按钮排版的img-holder-content结构</legend></fieldset>
 	<p>其实原本不需要这么复杂，如果把图片作为CSS的background-img而不是单独做一个&lt;img&gt;的话。先以《荒野猎人》为例，看看这个结构。</p>
 <pre><code>&lt;div class=&quot;row header&quot;&gt;
   &lt;header class=&quot;img-holder&quot;&gt;
-	&lt;img class=&quot;visible-lg-block&quot; src=&quot;pic/large.jpg&quot; alt=&quot;poster&quot;&gt;
-	&lt;img class=&quot;visible-sm-block visible-md-block&quot; src=&quot;pic/middle.jpg&quot; alt=&quot;poster&quot;&gt;
-	&lt;img class=&quot;visible-xs-block&quot; src=&quot;pic/small.jpg&quot; alt=&quot;poster&quot;&gt;
-	&lt;div class=&quot;img-content img-content-left&quot;&gt;
-	  &lt;h1&gt;《荒野猎人》&lt;/h1&gt;
-	  &lt;p class=&quot;lead&quot;&gt;豆瓣评分 7.9/10&lt;/p&gt;
-	  &lt;a class=&quot;btn btn-danger btn-lg&quot; href=&quot;http://v.youku.com/v_show/id_XMTU0NDE4ODM2NA==.html?from=s1.8-1-1.2&quot; target=&quot;_blank&quot; role=&quot;button&quot;&gt;观看预告片&lt;/a&gt;
-	&lt;/div&gt;
+    &lt;img class=&quot;visible-lg-block&quot; src=&quot;pic/large.jpg&quot; alt=&quot;poster&quot;&gt;
+    &lt;img class=&quot;visible-sm-block visible-md-block&quot; src=&quot;pic/middle.jpg&quot; alt=&quot;poster&quot;&gt;
+    &lt;img class=&quot;visible-xs-block&quot; src=&quot;pic/small.jpg&quot; alt=&quot;poster&quot;&gt;
+    &lt;div class=&quot;img-content img-content-left&quot;&gt;
+      &lt;h1&gt;《荒野猎人》&lt;/h1&gt;
+      &lt;p class=&quot;lead&quot;&gt;豆瓣评分 7.9/10&lt;/p&gt;
+      &lt;a class=&quot;btn btn-danger btn-lg&quot; href=&quot;http://v.youku.com/v_show/id_XMTU0NDE4ODM2NA==.html?from=s1.8-1-1.2&quot; target=&quot;_blank&quot; role=&quot;button&quot;&gt;观看预告片&lt;/a&gt;
+    &lt;/div&gt;
   &lt;/header&gt;
 &lt;/div&gt;&lt;!-- .row --&gt;</code></pre>
 <pre><code>/* img-holder-content */
 .img-holder {
-	position: relative;
+  position: relative;
 }
-	
+
 .img-content {
-	position: absolute;
-	text-align: center;
-	top: 45%;
-	transform: translate(-50%,-50%);
-	-webkit-transform: translate(-50%,-50%);
-	-moz-transform: translate(-50%,-50%);
-	-ms-transform: translate(-50%,-50%);
-	-o-transform: translate(-50%,-50%);
-	...
+  position: absolute;
+  text-align: center;
+  top: 45%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  ...
 }</code></pre>
 	<p>div是最高层，负责整个部分的排版（是Bootstrap的一部分），这样下面的holder自己的CSS不会影响整体排版。</p>
 	<p>holder里面有着背景图片和需要排版的content。content里面使用absolute，配合相对单位以及transform（原本的中心点是左上角，通过transform移到中心）来进行响应式的排版。</p>
@@ -229,20 +233,20 @@ $(window).on(&quot;scroll&quot;, checkScroll);</code></pre>
 	<p>这其实是个纯CSS的交互，利用了CSS的伪类(Pseudo-classes)，其中主要是:hover。（注：因为触摸屏并没有非常准确的:hover和:active，因此该效果在移动端通过media query被禁用）</p>
 <pre><code>/* 鼠标悬停动画效果 */
 @media (min-width: 769px) {
-	.col-md-3 a {
-		opacity: 0.6;
-		transition: opacity 0.2s ease-in;
-	}
+  .col-md-3 a {
+    opacity: 0.6;
+    transition: opacity 0.2s ease-in;
+  }
 
-	.col-md-3 a:hover,
-	.col-md-3 a:focus,
-	.col-md-3 a:active {
-		opacity: 1;
-		transition: opacity 0.2s ease-out;
-		-webkit-transition: opacity 0.2s ease-out;
-		-moz-transition: opacity 0.2s ease-out;
-		-o-transition: opacity 0.2s ease-out;
-	}
+  .col-md-3 a:hover,
+  .col-md-3 a:focus,
+  .col-md-3 a:active {
+    opacity: 1;
+    transition: opacity 0.2s ease-out;
+    -webkit-transition: opacity 0.2s ease-out;
+    -moz-transition: opacity 0.2s ease-out;
+    -o-transition: opacity 0.2s ease-out;
+  }
 }</code></pre>
 	<p>除了伪类的使用外，还使用了CSS3的动画效果(transition)，有一个0.2秒的淡出过渡。同样的动画效果也被应用在了导航栏的透明渐变之中。</p>
 	<fieldset><legend id="affix">Affix</legend></fieldset>
@@ -250,32 +254,32 @@ $(window).on(&quot;scroll&quot;, checkScroll);</code></pre>
 	<p>样式通过伪类来定义很容易，而超链接跳转的动画效果主要是通过jQuery来实现的。原本点击超链接（带#号标签的链接，指向的是同一页面中的不同位置），会直接打开新的页面并显示目标位置（可以看到URL背后带有#号）。而我所做的就是阻止这件事情，通过jQuery探测目标页面位置，改变当前滚动位置来缓慢滚上去。</p>
 <pre><code>//所有含有.inPage类名的超链接&lt;a&gt;，给点击事件添加新动作
 $(&quot;a[class~=&#39;inPage&#39;]&quot;).on(&quot;click&quot;,function(e){
-	//阻止默认动作，即跳转到超链接所指向的页面
-	e.preventDefault();
-	
-	//获取超链接的href属性，即要跳转到的页面位置
-	var dest = $(this).attr(&quot;href&quot;);
-	
-	//需要对高度做出的补偿，由HTML部分定义
-	//这是为了通用性，因为要在不同排版的页面中
-	//使用这个代码，所以有这么一个属性
-	var minus = $(this).attr(&quot;minus&quot;);
-	
-	//判断页面目标位置，若为#（回到顶部）则为零
-	if (dest==&quot;#&quot;) {
-		var target = 0;
-	} else {
-		var target = $(dest).offset().top-minus;
-	}
-	
-	//通过jQuery来不断更改当前滚动位置，以实现动画效果
-	$(&quot;body&quot;).animate({scrollTop: target}, &quot;slow&quot;);
+    //阻止默认动作，即跳转到超链接所指向的页面
+    e.preventDefault();
+
+    //获取超链接的href属性，即要跳转到的页面位置
+    var dest = $(this).attr(&quot;href&quot;);
+
+    //需要对高度做出的补偿，由HTML部分定义
+    //这是为了通用性，因为要在不同排版的页面中
+    //使用这个代码，所以有这么一个属性
+    var minus = $(this).attr(&quot;minus&quot;);
+
+    //判断页面目标位置，若为#（回到顶部）则为零
+    if (dest==&quot;#&quot;) {
+        var target = 0;
+    } else {
+        var target = $(dest).offset().top-minus;
+    }
+
+    //通过jQuery来不断更改当前滚动位置，以实现动画效果
+    $(&quot;body&quot;).animate({scrollTop: target}, &quot;slow&quot;);
 });</code></pre>
 <pre><code>&lt;aside id=&quot;myAffix&quot; data-spy=&quot;affix&quot;&gt;
   &lt;ul class=&quot;nav&quot;&gt;
-	&lt;li&gt;&lt;a class=&quot;inPage&quot; minus=&quot;90&quot; href=&quot;#best-picture&quot;&gt;最佳影片&lt;/a&gt;&lt;/li&gt;
-	&lt;li&gt;&lt;a class=&quot;inPage&quot; minus=&quot;90&quot; href=&quot;#directing&quot;&gt;最佳导演&lt;/a&gt;&lt;/li&gt;
-	...
+    &lt;li&gt;&lt;a class=&quot;inPage&quot; minus=&quot;90&quot; href=&quot;#best-picture&quot;&gt;最佳影片&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a class=&quot;inPage&quot; minus=&quot;90&quot; href=&quot;#directing&quot;&gt;最佳导演&lt;/a&gt;&lt;/li&gt;
+    ...
   &lt;/ul&gt;
   &lt;ul class=&quot;return-to-top&quot;&gt;&lt;a class=&quot;inPage&quot; minus=&quot;0&quot; href=&quot;#&quot;&gt;回到顶部&lt;/a&gt;&lt;/ul&gt;
 &lt;/aside&gt;</code></pre>
