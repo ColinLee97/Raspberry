@@ -8,11 +8,12 @@ body {
 }
 
 fieldset ~ fieldset {
-  margin-top: 5vh;
+  margin-top: 3vh;
 }
 
 legend,
-h4 {
+h4,
+.gold {
   font-weight: bold;
 }
 
@@ -21,5 +22,9 @@ legend {
 }
 
 h4 {
-  margin: 20px 0;
+  margin: 1.5vh 0;
+}
+
+.gold {
+  color: #b7a261;
 }

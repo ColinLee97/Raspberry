@@ -46,10 +46,6 @@ aside ul li {
   list-style: none;
 }
 
-aside .nav > .active {
-  border-left: 2px solid #b7a261;
-}
-
 aside .nav > li > a,
 aside .return-to-top > li > a {
   padding-top: 5px;
@@ -65,7 +61,9 @@ aside .nav li > a:focus {
   padding-left: 13px;
 }
 
-aside .nav > .active > a {
+aside .nav > .active > a,
+aside .nav > .active > a:focus {
+  border-left: 2px solid #b7a261;
   color: #b7a261;
   padding-left: 13px;
 }
