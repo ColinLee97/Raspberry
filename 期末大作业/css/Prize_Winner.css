@@ -36,19 +36,13 @@ strong {
 }
 
 /* affix */
-:target:before {
-	content:"";
-	display:block;
-	height:90px; /* fixed header height*/
-	margin:-90px 0 0; /* negative fixed header height */
-}
-
 aside {
 	text-align: left;
 }
 
 aside ul li {
 	padding-left: 0px;
+	list-style: none;
 }
 
 aside ul li.active {
@@ -71,7 +65,7 @@ aside li.active a {
 }
 
 
-aside ul.return-to-top {
+aside .return-to-top {
 	padding-left: 15px;
 	margin-top: 10px;
 }

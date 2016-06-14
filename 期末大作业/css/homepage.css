@@ -78,6 +78,8 @@ div.row:last-child {
 legend {
 	text-align: center;
 	border-bottom-color: #b7a261;
+	font-size: 36px;
+	font-weight: bold;
 }
 
 .col-md-3 img {
