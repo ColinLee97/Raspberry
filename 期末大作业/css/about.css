@@ -1,24 +1,25 @@
 /* 正文 */
 body {
-	padding-top: 70px;
+  padding-top: 70px;
 }
 
 #forMain {
-	margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 fieldset ~ fieldset {
-	margin-top: 5vh;
+  margin-top: 5vh;
 }
 
-legend, h4 {
-	font-weight: bold;
+legend,
+h4 {
+  font-weight: bold;
 }
 
 legend {
-	border-bottom-color: #5e477c;
+  border-bottom-color: #5e477c;
 }
 
 h4 {
-	margin: 20px 0;
+  margin: 20px 0;
 }

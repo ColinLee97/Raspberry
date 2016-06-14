@@ -1,36 +1,36 @@
 /* 正文 */
 body {
-	padding-top: 10vh;
+  padding-top: 10vh;
 }
 
 #forMain {
-	margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 div.row {
-	margin-bottom: 20vh;
+  margin-bottom: 20vh;
 }
 
 div.row + .row {
-	margin-bottom: 100px;
+  margin-bottom: 100px;
 }
 
 /* fieldset */
 legend {
-	text-align: center;
-	border-bottom-color: #b7a261;
+  text-align: center;
+  border-bottom-color: #b7a261;
 }
 
 /* Carousel */
 #myCarousel {
-	border: 0.5em solid #000;
-	background-color: #000;
+  border: 0.5em solid #000;
+  background-color: #000;
 }
 
 #myCarousel img {
-	max-height: 70vh;
-	height: auto;
-	width: auto;
-	margin-left: auto;
-	margin-right: auto;
+  max-height: 70vh;
+  height: auto;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
 }

@@ -1,84 +1,84 @@
 /* 封面标题 */
 #forHeader {
-	margin-bottom: 20px;
-	width: 100%;
-	padding: 0;
+  margin-bottom: 20px;
+  width: 100%;
+  padding: 0;
 }
+
 /* 主体 */
 #forMain {
-	margin-bottom: 20px;
-	text-align: center;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 div.row {
-	margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
-main ul li{
-	list-style-type: none;
+main ul li {
+  list-style-type: none;
 }
 
 main ul {
-	padding-left: 0;
+  padding-left: 0;
 }
 
 main {
-	background-color: #fafafa;
+  background-color: #fafafa;
 }
 
 h3 {
-	color: #b7a261;
-	font-weight: bold;
+  color: #b7a261;
+  font-weight: bold;
 }
 
 strong {
-	color: #5e477c;
+  color: #5e477c;
 }
 
 /* affix */
 aside {
-	text-align: left;
+  text-align: left;
 }
 
 aside ul li {
-	padding-left: 0px;
-	list-style: none;
+  padding-left: 0;
+  list-style: none;
 }
 
 aside ul li.active {
-	border-left: 2px solid #b7a261;
+  border-left: 2px solid #b7a261;
 }
 
 aside a {
-	margin-bottom: 10px !important;
-	padding-top: 0 !important;
-	padding-bottom: 0 !important;
+  margin-bottom: 10px !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
 }
 
 .nav > li > a:focus {
-	background-color: transparent;
+  background-color: transparent;
 }
 
 aside li.active a {
-	color: #b7a261;
-	padding-left: 13px !important;
+  color: #b7a261;
+  padding-left: 13px !important;
 }
 
-
 aside .return-to-top {
-	padding-left: 15px;
-	margin-top: 10px;
+  padding-left: 15px;
+  margin-top: 10px;
 }
 
 .affix {
-	top: 90px;
+  top: 90px;
 }
 
 .affix-top {
-	margin-top: 20px;
-	width: 100%;
+  margin-top: 20px;
+  width: 100%;
 }
 
 .affix-bottom {
-	position: absolute;
+  position: absolute;
 }
