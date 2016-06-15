@@ -46,3 +46,8 @@ legend {
 .carousel-caption {
   color: #fafafa;
 }
+
+/* 视频 */
+video {
+  width: 100%;
+}

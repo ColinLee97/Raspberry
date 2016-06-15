@@ -81,10 +81,10 @@
         <h4 id="grid-system">栅格系统（Grid System）与关界点阈值(Viewport Breakpoint)</h4>
         <p>网页继承了<a href="http://getbootstrap.com/css/#grid-options">Bootstrap的栅格系统与关界点阈值</a>。</p>
         <p>这份网站是在Bootstrap的框架下搭建的，所以也沿用了他的定义，并没有做出更改。</p>
-        <p>（此处应该有图片）</p>
-        <p>网友基本上有两套排版，一套针对移动设备的（col-xs），一套针对平板、桌面的(sm/md/lg)，部分涉及到图片的内容会有三套排版(xs、sm/md、lg)。</p>
+        <img class="img-responsive" src="pic/about/grid.jpg" alt="Grid System">
+        <p>网页基本上有两套排版，一套针对移动设备的（col-xs），一套针对平板、桌面的(sm/md/lg)，部分涉及到图片的内容会有三套排版(xs、sm/md、lg)。</p>
         <p>以首页为例，移动设备基本上属于垂直排版，而对于更大的设备，会出现横向的排版。</p>
-        <p>（此处应该有图片）</p>
+        <img class="img-responsive" src="pic/about/viewport.jpg" alt="Viewport">
         <h4 id="units">尺寸单位</h4>
         <p>在设计中，绝大部分采用的都是vh/vw/百分比等相对（视口的）单位，而不是传统的px等绝对单位。这样在进行缩放时，各部分对应的比例关系也能维持下去。</p>
         <p>但一个很大的例外就是字体大小。因为流动(fluid)的字体大小算法很复杂…而且加上Bootstrap自身规定了字体大小，要超控比较麻烦，最终还是放弃了。在开发中的Bootstrap 4中，默认的单位大小也改为了相对单位，这是很值得期待的一个亮点。</p>
@@ -125,9 +125,8 @@
 }</code></pre>
         <p>这个img-holder-content结构以及三张图片的hidden/visible属性（实质是响应式设计中的Art Direction问题）会在后面再介绍，重点是中间的media query部分。</p>
         <p>可以看到，默认情况下，按钮及说明文字本身除了居中和加粗以外就没有别的样式了，这也就是移动设备上看到的效果。</p>
-        <p>（此处应该有图片）</p>
-        <p>而针对更先进、功能更强大、支持性更好的桌面浏览器来说，便使用CSS3里的media query，来针对性地增强样式效果。对于那些落后的浏览器以及移动设备来说，不支持media query便会忽视里面的内容，这就是渐进增强的一个典例。</p>
-        <p>（此处应该有图片）</p>
+        <p>而针对更先进、功能更强大、支持性更好的桌面浏览器来说，便使用CSS3里的media query，来针对性地增强样式效果与交互体验。对于那些落后的浏览器以及移动设备来说，不支持media query便会忽视里面的内容，这就是渐进增强的一个典例。</p>
+        <img class="img-responsive" src="pic/about/responsive.jpg" alt="Responsive Design">
         <h4 id="art-direction">Art Direction</h4>
         <p>在响应式设计中，关于响应式图片有两个特性：一个是针对不同分辨率的屏幕会展示不同分辨率的图片，这样确保显示效果（高清屏显示高清图）的同时减少流量（手机看小图）；另一个就是Art-Direction，针对不同的尺寸采取不同的构图。</p>
         <p>这个功能，可以用HTML5最新的&lt;picture&gt;实现。然而，在倒数第二天进行调试的时候，我才发现，因为&lt;picture&gt;标签太先进，很多的浏览器并不支持这样的标签（需要iOS 9.3以上的Safari，全系的IE浏览器都不支持，就连CC 2015版的DW都会提示语法错误）。最终，我换了另一种方法来实现。</p>
@@ -139,7 +138,7 @@
   ...
 &lt;/header&gt;</code></pre>
         <p>所有的封面海报都有三个版本，针对移动设备专门裁剪（竖屏）的small.jpg，针对平板和小屏幕的(16:9)middle.jpg，以及针对台式机显示器的（2.35：1）large.jpg。</p>
-        <p>（此处应该有图片）</p>
+        <img class="img-responsive" src="pic/about/artdirection.jpg" alt="Art Direction">
         <p>很简单粗暴的方法，配合Bootstrap的分界点阈值，在不同的视口宽度下显示不同的图片，剩下的图片被隐藏。这种方法最大的缺陷就在于，需要加载三张图而不是一张图，这会极大地增大流量、减慢速度。</p>
         <p>在&lt;picture&gt;元素出来之前，还有一种解决方法，就是把图片写入css的background-img里面，然后通过media query来控制。主要是当时我的网页绝大部分结构都写完了，如果要从&lt;picture&gt;改到这种方式，需要大改结构，所以也就放弃了，选了上面那种做法。</p>
       </fieldset>
