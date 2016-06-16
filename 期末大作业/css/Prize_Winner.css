@@ -5,6 +5,10 @@
   padding: 0;
 }
 
+#forHeader img {
+  width: 100%;
+}
+
 /* 主体 */
 #forMain {
   margin-bottom: 20px;
